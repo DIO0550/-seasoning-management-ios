@@ -1,1 +1,4 @@
-# -seasoning-management-ios
+# seasoning-management-iOS
+
+## 使用ライブラリ
+TODO
