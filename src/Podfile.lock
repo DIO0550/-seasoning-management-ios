@@ -1,0 +1,20 @@
+PODS:
+  - LicensePlist (2.9.0)
+  - RxSwift (5.0.1)
+
+DEPENDENCIES:
+  - LicensePlist
+  - RxSwift (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - LicensePlist
+    - RxSwift
+
+SPEC CHECKSUMS:
+  LicensePlist: 94c2f54bb9cc5427797addaeb716cfaba3544e89
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+
+PODFILE CHECKSUM: 2f9bda55966b7f1e6df31d2f476d93bff6e4b976
+
+COCOAPODS: 1.8.4
