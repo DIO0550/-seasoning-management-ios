@@ -9,6 +9,12 @@
 import UIKit
 
 class SMUsingSeasoningViewController: UIViewController {
-
+    var usingSeasoningList: Array = ["Seasoning1", "Seasoning2", "Seasoning3"]
+    
+    @IBOutlet weak var usingSeasoningListTableView: UITableView!
+    
+    override func viewDidLoad() {
+        self.usingSeasoningListTableView.register (UINib(nibName: "SMUsingSeasoningTableViewCell", bundle: nil),forCellReuseIdentifier:"SMUsingSeasoningTableViewCell")
+    }
 }
 
