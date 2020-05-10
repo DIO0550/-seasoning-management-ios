@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		307074EF1457C676BC67552F /* Pods_SeasoningManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FEDE3824B93F6516AE1839 /* Pods_SeasoningManagement.framework */; };
 		314853D10155699CEAD97E11 /* Pods_SeasoningManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF187730ECA040F96406FA8A /* Pods_SeasoningManagementTests.framework */; };
+		3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A828D972467C40E00A05F01 /* SMSettingViewController.swift */; };
 		3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */; };
 		3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */; };
-		3A9DC2212466E29F000A7AB3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2202466E29F000A7AB3 /* FirstViewController.swift */; };
-		3A9DC2232466E29F000A7AB3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2222466E29F000A7AB3 /* SecondViewController.swift */; };
+		3A9DC2212466E29F000A7AB3 /* SMUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */; };
+		3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */; };
 		3A9DC2262466E29F000A7AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC2242466E29F000A7AB3 /* Main.storyboard */; };
 		3A9DC2292466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2272466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld */; };
 		3A9DC22B2466E2A0000A7AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22A2466E2A0000A7AB3 /* Assets.xcassets */; };
@@ -33,11 +34,12 @@
 /* Begin PBXFileReference section */
 		07FEDE3824B93F6516AE1839 /* Pods_SeasoningManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECCB59D0AD016C3298DFB35 /* Pods-SeasoningManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagement.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagement/Pods-SeasoningManagement.release.xcconfig"; sourceTree = "<group>"; };
+		3A828D972467C40E00A05F01 /* SMSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSettingViewController.swift; sourceTree = "<group>"; };
 		3A9DC2192466E29F000A7AB3 /* SeasoningManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasoningManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A9DC2202466E29F000A7AB3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3A9DC2222466E29F000A7AB3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMUsingSeasoningViewController.swift; sourceTree = "<group>"; };
+		3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningViewController.swift; sourceTree = "<group>"; };
 		3A9DC2252466E29F000A7AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9DC2282466E29F000A7AB3 /* SeasoningManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeasoningManagement.xcdatamodel; sourceTree = "<group>"; };
 		3A9DC22A2466E2A0000A7AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +74,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A828D992467C54A00A05F01 /* UsingSeasoningView */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */,
+			);
+			path = UsingSeasoningView;
+			sourceTree = "<group>";
+		};
+		3A828D9A2467C55F00A05F01 /* StockSeasoningView */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */,
+			);
+			path = StockSeasoningView;
+			sourceTree = "<group>";
+		};
+		3A828D9B2467C61E00A05F01 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				3A828D972467C40E00A05F01 /* SMSettingViewController.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		3A828D9C2467C64900A05F01 /* Rresources */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DC22A2466E2A0000A7AB3 /* Assets.xcassets */,
+				3A828D9D2467C68A00A05F01 /* storyboard */,
+			);
+			path = Rresources;
+			sourceTree = "<group>";
+		};
+		3A828D9D2467C68A00A05F01 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DC2242466E29F000A7AB3 /* Main.storyboard */,
+				3A9DC22C2466E2A0000A7AB3 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
 		3A9DC2102466E29F000A7AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +141,10 @@
 			children = (
 				3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */,
 				3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */,
-				3A9DC2202466E29F000A7AB3 /* FirstViewController.swift */,
-				3A9DC2222466E29F000A7AB3 /* SecondViewController.swift */,
-				3A9DC2242466E29F000A7AB3 /* Main.storyboard */,
-				3A9DC22A2466E2A0000A7AB3 /* Assets.xcassets */,
-				3A9DC22C2466E2A0000A7AB3 /* LaunchScreen.storyboard */,
+				3A828D9B2467C61E00A05F01 /* SettingView */,
+				3A828D9A2467C55F00A05F01 /* StockSeasoningView */,
+				3A828D992467C54A00A05F01 /* UsingSeasoningView */,
+				3A828D9C2467C64900A05F01 /* Rresources */,
 				3A9DC22F2466E2A0000A7AB3 /* Info.plist */,
 				3A9DC2272466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld */,
 			);
@@ -343,8 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9DC2232466E29F000A7AB3 /* SecondViewController.swift in Sources */,
-				3A9DC2212466E29F000A7AB3 /* FirstViewController.swift in Sources */,
+				3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */,
+				3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */,
+				3A9DC2212466E29F000A7AB3 /* SMUsingSeasoningViewController.swift in Sources */,
 				3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */,
 				3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */,
 				3A9DC2292466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld in Sources */,
