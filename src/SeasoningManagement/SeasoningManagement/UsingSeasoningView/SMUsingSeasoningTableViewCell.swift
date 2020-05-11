@@ -9,16 +9,23 @@
 import UIKit
 
 class SMUsingSeasoningTableViewCell: UITableViewCell {
-
+    
+    /// 初期のフレーム
+    /// layoutSubViewsが呼ばれるたびに高さが縮むため
+    var originalFrame: CGRect? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if self.originalFrame == nil { self.originalFrame = self.frame; }
+        self.frame = self.originalFrame!.inset(by: UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0))
     }
 
 }
