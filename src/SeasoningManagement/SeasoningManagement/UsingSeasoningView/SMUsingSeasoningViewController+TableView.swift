@@ -14,13 +14,17 @@ extension SMUsingSeasoningViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.cyan//init(red: 135, green: 206, blue: 235, alpha: 1)
+        cell.backgroundColor = UIColor.init(named: "SMUsingSeasoningTableViewCell")
         cell.layer.borderWidth = 2.0
         cell.layer.cornerRadius = 10.0
+        cell.layer.masksToBounds = false;
+        cell.layer.shadowRadius = 5.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SMUsingSeasoningTableViewCell", for: indexPath) as! SMUsingSeasoningTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMUsingSeasoningTableViewCellIndentifier, for: indexPath) as! SMUsingSeasoningTableViewCell
 
         return cell
     }
