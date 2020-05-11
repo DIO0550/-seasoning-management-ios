@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		307074EF1457C676BC67552F /* Pods_SeasoningManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FEDE3824B93F6516AE1839 /* Pods_SeasoningManagement.framework */; };
 		314853D10155699CEAD97E11 /* Pods_SeasoningManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF187730ECA040F96406FA8A /* Pods_SeasoningManagementTests.framework */; };
+		3A65B0342469842800267FFC /* SMCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65B0332469842800267FFC /* SMCommonConst.swift */; };
 		3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A828D972467C40E00A05F01 /* SMSettingViewController.swift */; };
 		3A828DA02468073500A05F01 /* SMUsingSeasoningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A828D9F2468073500A05F01 /* SMUsingSeasoningTableViewCell.xib */; };
 		3A828DA224681B8100A05F01 /* SMUsingSeasoningViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+TableView.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		07FEDE3824B93F6516AE1839 /* Pods_SeasoningManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECCB59D0AD016C3298DFB35 /* Pods-SeasoningManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagement.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagement/Pods-SeasoningManagement.release.xcconfig"; sourceTree = "<group>"; };
+		3A65B0332469842800267FFC /* SMCommonConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCommonConst.swift; sourceTree = "<group>"; };
 		3A828D972467C40E00A05F01 /* SMSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSettingViewController.swift; sourceTree = "<group>"; };
 		3A828D9F2468073500A05F01 /* SMUsingSeasoningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMUsingSeasoningTableViewCell.xib; sourceTree = "<group>"; };
 		3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SMUsingSeasoningViewController+TableView.swift"; sourceTree = "<group>"; };
@@ -80,6 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A65B032246983F100267FFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3A65B0332469842800267FFC /* SMCommonConst.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3A65B0352469852100267FFC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3A828D992467C54A00A05F01 /* UsingSeasoningView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +178,8 @@
 				3A828D9B2467C61E00A05F01 /* SettingView */,
 				3A828D9A2467C55F00A05F01 /* StockSeasoningView */,
 				3A828D992467C54A00A05F01 /* UsingSeasoningView */,
+				3A65B032246983F100267FFC /* Common */,
+				3A65B0352469852100267FFC /* Extension */,
 				3A828D9C2467C64900A05F01 /* Rresources */,
 				3A9DC22F2466E2A0000A7AB3 /* Info.plist */,
 				3A9DC2272466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld */,
@@ -412,6 +431,7 @@
 				3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */,
 				3A828DA4246824E700A05F01 /* SMUsingSeasoningTableViewCell.swift in Sources */,
 				3A9DC2292466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld in Sources */,
+				3A65B0342469842800267FFC /* SMCommonConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
