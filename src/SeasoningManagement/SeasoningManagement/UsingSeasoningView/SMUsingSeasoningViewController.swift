@@ -9,7 +9,7 @@
 import UIKit
 
 class SMUsingSeasoningViewController: UIViewController {
-    var usingSeasoningList: Array = ["Seasoning1", "Seasoning2", "Seasoning3"]
+    var usingSeasoningList: Array = ["Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3"]
     
     @IBOutlet weak var usingSeasoningListTableView: UITableView!
     
