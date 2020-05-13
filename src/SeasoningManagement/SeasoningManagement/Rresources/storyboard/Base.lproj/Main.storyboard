@@ -15,27 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-XA-Lcc">
-                                <rect key="frame" x="0.0" y="759" width="414" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-XA-Lcc">
+                                <rect key="frame" x="0.0" y="783" width="414" height="30"/>
                                 <state key="normal" title="追加"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xEd-Ki-6s9">
-                                <rect key="frame" x="20" y="145" width="374" height="572"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VQv-CB-55Q">
+                                <rect key="frame" x="20" y="118" width="374" height="645"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="NmW-np-tSa">
+                                    <size key="itemSize" width="120" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="0XZ-2h-hMc"/>
-                                    <outlet property="delegate" destination="9pv-A4-QxB" id="vLD-46-O0g"/>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="g2t-B3-zDQ"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="cfq-7Y-mcc"/>
                                 </connections>
-                            </tableView>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WPk-XA-Lcc" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="2K1-Id-Tsm"/>
+                            <constraint firstItem="WPk-XA-Lcc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Fju-Mn-7Xz"/>
+                            <constraint firstItem="WPk-XA-Lcc" firstAttribute="top" secondItem="VQv-CB-55Q" secondAttribute="bottom" constant="20" id="Uui-bK-CeL"/>
+                            <constraint firstItem="WPk-XA-Lcc" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="iGu-EF-fHM"/>
+                            <constraint firstItem="VQv-CB-55Q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="j5v-3K-3NA"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="VQv-CB-55Q" secondAttribute="trailing" constant="20" id="jRe-gq-Zoq"/>
+                            <constraint firstItem="VQv-CB-55Q" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="30" id="wzE-DY-41B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="使用中" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="usingSeasoningListTableView" destination="xEd-Ki-6s9" id="UXl-B7-DeA"/>
+                        <outlet property="usingSeasoningListCollectionView" destination="VQv-CB-55Q" id="Ked-Ed-J15"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
