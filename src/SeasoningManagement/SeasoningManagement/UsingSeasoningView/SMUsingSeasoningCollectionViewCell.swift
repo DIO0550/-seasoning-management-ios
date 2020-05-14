@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class SMUsingSeasoningCollectionViewCell: UICollectionViewCell {
 
@@ -46,16 +47,17 @@ class SMUsingSeasoningCollectionViewCell: UICollectionViewCell {
     private func decreaseViewSize(size: CGSize) {
         let newFrame: CGRect = self.frame.inset(by: UIEdgeInsets(top: size.height / 2.0, left: size.width / 2.0, bottom: size.height / 2.0, right: size.width / 2.0))
         
+        let scaleX = newFrame.width / self.frame.width
+        let scaleY = newFrame.height / self.frame.height
+        
         UIView.animate(withDuration: 0.1, delay: 0.0, options: [], animations: {
-            self.frame = newFrame
+            self.transform = self.transform.scaledBy(x: scaleX, y: scaleY)
         }, completion: nil)
     }
     
     private func increaseViewSize(size: CGSize) {
-        let newFrame: CGRect = self.frame.inset(by: UIEdgeInsets(top: -size.height / 2.0, left: -size.width / 2.0, bottom: -size.height / 2.0, right: -size.width / 2.0))
-        
         UIView.animate(withDuration: 0.1, delay: 0.0, options: [], animations: {
-            self.frame = newFrame
+            self.transform = CGAffineTransform.identity
         }, completion: nil)
     }
 }
