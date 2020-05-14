@@ -19,27 +19,28 @@ class SMUsingSeasoningCollectionViewCell: UICollectionViewCell {
     
     private func setupLayer() {
         self.backgroundColor = UIColor.white
-        self.layer.borderWidth = 2.0
+        self.layer.borderWidth = 5.0
         self.layer.cornerRadius = 10.0
         self.layer.masksToBounds = false;
-        self.layer.shadowRadius = 5.0
+        self.layer.shadowRadius = 8.0
         self.layer.shadowOpacity = 1.0
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.layer.borderColor = UIColor.init(named: "SMUsingSeasoningCollectionViewCellTouchBackgroundColor")?.cgColor
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.decreaseViewSize(size: CGSize(width: SMUsingSeasoningCollectionViewCell.ChangeSize, height: SMUsingSeasoningCollectionViewCell.ChangeSize))
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.backgroundColor = UIColor.init(named: "SMUsingSeasoningCollectionViewCellTouchBackgroundColor")
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.increaseViewSize(size: CGSize(width: SMUsingSeasoningCollectionViewCell.ChangeSize, height: SMUsingSeasoningCollectionViewCell.ChangeSize))
+        self.backgroundColor = UIColor.white
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.increaseViewSize(size: CGSize(width: SMUsingSeasoningCollectionViewCell.ChangeSize, height: SMUsingSeasoningCollectionViewCell.ChangeSize))
+        self.backgroundColor = UIColor.white
     }
     
     private func decreaseViewSize(size: CGSize) {
