@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,20 +19,39 @@
                         <constraint firstAttribute="width" secondItem="DkV-xA-dfT" secondAttribute="height" multiplier="63:64" id="j4z-4J-z77"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUB-aN-qlX">
-                    <rect key="frame" x="146" y="15" width="234" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUB-aN-qlX">
+                    <rect key="frame" x="146" y="15" width="234" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賞味期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-os-ur1">
+                    <rect key="frame" x="146" y="83" width="234" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000/01/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnB-hK-2wt">
+                    <rect key="frame" x="154" y="111.5" width="226" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" name="SMUsingSeasoningTableViewCell"/>
             <constraints>
                 <constraint firstItem="DUB-aN-qlX" firstAttribute="top" secondItem="C4D-GY-hTj" secondAttribute="top" constant="15" id="5gY-sa-1cm"/>
                 <constraint firstItem="DUB-aN-qlX" firstAttribute="leading" secondItem="DkV-xA-dfT" secondAttribute="trailing" constant="8" id="9QB-si-hNe"/>
+                <constraint firstItem="HnB-hK-2wt" firstAttribute="leading" secondItem="DkV-xA-dfT" secondAttribute="trailing" constant="16" id="Ic8-p0-fFa"/>
                 <constraint firstItem="DkV-xA-dfT" firstAttribute="centerY" secondItem="C4D-GY-hTj" secondAttribute="centerY" id="J3r-YE-LCc"/>
+                <constraint firstAttribute="bottom" secondItem="Mci-os-ur1" secondAttribute="bottom" constant="46.5" id="MKa-OF-oCo"/>
                 <constraint firstItem="DkV-xA-dfT" firstAttribute="leading" secondItem="C4D-GY-hTj" secondAttribute="leading" constant="20" id="PsY-zR-PXR"/>
+                <constraint firstItem="Mci-os-ur1" firstAttribute="leading" secondItem="DkV-xA-dfT" secondAttribute="trailing" constant="8" id="QT5-Pn-Cap"/>
                 <constraint firstAttribute="trailing" secondItem="DUB-aN-qlX" secondAttribute="trailing" constant="20" id="Svp-R8-n1F"/>
+                <constraint firstItem="DUB-aN-qlX" firstAttribute="height" secondItem="DkV-xA-dfT" secondAttribute="height" multiplier="0.5" id="h2r-xZ-ncs"/>
+                <constraint firstItem="HnB-hK-2wt" firstAttribute="top" secondItem="Mci-os-ur1" secondAttribute="bottom" constant="8" id="oqW-eY-Q19"/>
+                <constraint firstAttribute="trailing" secondItem="Mci-os-ur1" secondAttribute="trailing" constant="20" id="qfH-ly-4WG"/>
+                <constraint firstAttribute="trailing" secondItem="HnB-hK-2wt" secondAttribute="trailing" constant="20" id="u6J-5d-tkA"/>
+                <constraint firstItem="Mci-os-ur1" firstAttribute="top" secondItem="DUB-aN-qlX" secondAttribute="bottom" constant="8" id="uMp-br-s6f"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -41,9 +59,4 @@
             <point key="canvasLocation" x="-62.318840579710148" y="126.5625"/>
         </view>
     </objects>
-    <resources>
-        <namedColor name="SMUsingSeasoningTableViewCell">
-            <color red="0.52941176470588236" green="0.80784313725490198" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
