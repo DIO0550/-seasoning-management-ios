@@ -9,5 +9,5 @@
 import UIKit
 
 struct SMCommonConst {
-    static let SMUsingSeasoningTableViewCellIndentifier = "SMUsingSeasoningTableViewCell"
+    static let SMUsingSeasoningCollectionViewCellIndentifier = "SMUsingSeasoningCollectionViewCell"
 }
