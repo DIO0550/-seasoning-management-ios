@@ -14,10 +14,10 @@ extension SMUsingSeasoningViewController: UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SMUsingSeasoningCollectionViewCell", for: indexPath)
+        let usingSeasoningCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: SMCommonConst.SMUsingSeasoningCollectionViewCellIndentifier, for: indexPath) as! SMUsingSeasoningCollectionViewCell
 
 
-        return cell
+        return usingSeasoningCollectionViewCell
     }
     
 
