@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="VzB-OT-4o0">
+            <objects>
+                <viewController id="fk7-9i-7Db" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vE-7I-jJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gOq-Mw-k0O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t33-gT-KxI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnS-3k-gjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1671" y="-1980"/>
+        </scene>
         <!--使用中-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -50,6 +66,7 @@
                     <tabBarItem key="tabBarItem" title="使用中" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="usingSeasoningListCollectionView" destination="VQv-CB-55Q" id="Ked-Ed-J15"/>
+                        <segue destination="fk7-9i-7Db" kind="show" id="PSt-wX-wzf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
