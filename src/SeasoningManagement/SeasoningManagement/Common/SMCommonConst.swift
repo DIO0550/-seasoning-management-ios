@@ -10,4 +10,6 @@ import UIKit
 
 struct SMCommonConst {
     static let SMUsingSeasoningCollectionViewCellIndentifier = "SMUsingSeasoningCollectionViewCell"
+    
+    static let SMAddUsingSeasoingViewControllerShowIndentifier = "SMAddUsingSeasoingViewControllerShowIndentifier"
 }

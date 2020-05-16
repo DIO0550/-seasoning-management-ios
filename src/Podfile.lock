@@ -1,20 +1,30 @@
 PODS:
   - LicensePlist (2.9.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - LicensePlist
-  - RxSwift (~> 5.0)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
     - LicensePlist
+    - RxCocoa
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
   LicensePlist: 94c2f54bb9cc5427797addaeb716cfaba3544e89
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 2f9bda55966b7f1e6df31d2f476d93bff6e4b976
+PODFILE CHECKSUM: 4c46203855800415c0fa3bfbcbe27cb48fdb52f8
 
 COCOAPODS: 1.8.4

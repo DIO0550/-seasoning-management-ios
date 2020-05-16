@@ -7,7 +7,13 @@ project './SeasoningManagement/SeasoningManagement'
 platform :ios, '13.0'
 
 def shared_pod
-    pod 'RxSwift' , '~> 5.0'
+    pod 'RxSwift' , '~> 5'
+    pod 'RxCocoa', '~> 5'
+end
+
+def test_shared_pod
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
 end
 
 

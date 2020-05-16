@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail Using Seasoning View Controller-->
         <scene sceneID="VzB-OT-4o0">
             <objects>
-                <viewController id="fk7-9i-7Db" sceneMemberID="viewController">
+                <viewController id="fk7-9i-7Db" customClass="SMDetailUsingSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vE-7I-jJ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnS-3k-gjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1671" y="-1980"/>
+            <point key="canvasLocation" x="-1668" y="-1980"/>
         </scene>
         <!--使用中-->
         <scene sceneID="hNz-n2-bh7">
@@ -65,13 +65,31 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="使用中" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="addUsingSeasoningButton" destination="WPk-XA-Lcc" id="m7E-Xs-eTH"/>
                         <outlet property="usingSeasoningListCollectionView" destination="VQv-CB-55Q" id="Ked-Ed-J15"/>
                         <segue destination="fk7-9i-7Db" kind="show" id="PSt-wX-wzf"/>
+                        <segue destination="w86-1q-fnA" kind="show" identifier="SMAddUsingSeasoingViewControllerShowIndentifier" id="x03-eg-xbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-884.05797101449286" y="-1980.1339285714284"/>
+        </scene>
+        <!--Add Using Seasoning View Controller-->
+        <scene sceneID="oX7-zc-Ms0">
+            <objects>
+                <viewController id="w86-1q-fnA" customClass="SMAddUsingSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svr-8I-wvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rwm-6q-Zbb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6BD-Z3-9kz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RX4-C2-kbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="-1271"/>
         </scene>
         <!--設定-->
         <scene sceneID="CBg-TJ-x60">

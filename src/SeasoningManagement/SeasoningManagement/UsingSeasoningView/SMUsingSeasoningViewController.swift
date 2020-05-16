@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SMUsingSeasoningViewController: UIViewController {
     var usingSeasoningList: Array = ["Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3"]
@@ -17,12 +19,22 @@ class SMUsingSeasoningViewController: UIViewController {
     }
     
     static let SMUsingSeasoningListCollectionViewItemHeight: CGFloat = 150.0
+    
+    let disposeBag = DisposeBag()
 
     @IBOutlet weak var usingSeasoningListCollectionView: UICollectionView!
+    @IBOutlet weak var addUsingSeasoningButton: UIButton!
     
     override func viewDidLoad() {
         self.usingSeasoningListCollectionView.register(UINib(nibName: SMCommonConst.SMUsingSeasoningCollectionViewCellIndentifier, bundle: nil), forCellWithReuseIdentifier: SMCommonConst.SMUsingSeasoningCollectionViewCellIndentifier)
         self.setupFlowLayout()
+        
+        self.addUsingSeasoningButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+            })
+            .disposed(by: disposeBag)
+        
+        self.usingSeasoningListCollectionView.rx.itemSelected
     }
     
     private func setupFlowLayout() {

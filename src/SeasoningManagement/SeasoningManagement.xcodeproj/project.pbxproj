@@ -11,6 +11,8 @@
 		314853D10155699CEAD97E11 /* Pods_SeasoningManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF187730ECA040F96406FA8A /* Pods_SeasoningManagementTests.framework */; };
 		3A04E5F9246C0D08004651E5 /* SMUsingSeasoningCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A04E5F8246C0D08004651E5 /* SMUsingSeasoningCollectionViewCell.xib */; };
 		3A04E5FB246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04E5FA246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift */; };
+		3A166B88246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A166B87246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift */; };
+		3A166B8A246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A166B89246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift */; };
 		3A65B0342469842800267FFC /* SMCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65B0332469842800267FFC /* SMCommonConst.swift */; };
 		3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A828D972467C40E00A05F01 /* SMSettingViewController.swift */; };
 		3A828DA224681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift */; };
@@ -40,6 +42,8 @@
 		1ECCB59D0AD016C3298DFB35 /* Pods-SeasoningManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagement.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagement/Pods-SeasoningManagement.release.xcconfig"; sourceTree = "<group>"; };
 		3A04E5F8246C0D08004651E5 /* SMUsingSeasoningCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMUsingSeasoningCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A04E5FA246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMUsingSeasoningCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A166B87246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAddUsingSeasoningViewController.swift; sourceTree = "<group>"; };
+		3A166B89246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDetailUsingSeasoningViewController.swift; sourceTree = "<group>"; };
 		3A65B0332469842800267FFC /* SMCommonConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCommonConst.swift; sourceTree = "<group>"; };
 		3A828D972467C40E00A05F01 /* SMSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSettingViewController.swift; sourceTree = "<group>"; };
 		3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SMUsingSeasoningViewController+CollectionView.swift"; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */,
 				3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift */,
 				3A04E5FA246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift */,
+				3A166B87246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift */,
+				3A166B89246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift */,
 				3A828D9E2468053600A05F01 /* nib */,
 			);
 			path = UsingSeasoningView;
@@ -424,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A828DA224681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift in Sources */,
+				3A166B8A246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift in Sources */,
+				3A166B88246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift in Sources */,
 				3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */,
 				3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */,
 				3A04E5FB246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift in Sources */,
