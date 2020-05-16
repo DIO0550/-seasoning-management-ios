@@ -56,6 +56,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="expirationDateLabel" destination="HnB-hK-2wt" id="z5l-e3-ECx"/>
+                <outlet property="seasoningNameLabel" destination="DUB-aN-qlX" id="Dbg-a1-xqp"/>
+            </connections>
             <point key="canvasLocation" x="-62.318840579710148" y="126.5625"/>
         </view>
     </objects>

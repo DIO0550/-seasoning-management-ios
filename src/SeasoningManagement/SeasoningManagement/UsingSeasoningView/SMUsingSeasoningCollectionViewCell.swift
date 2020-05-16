@@ -11,6 +11,9 @@ import QuartzCore
 
 class SMUsingSeasoningCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var seasoningNameLabel: UILabel!
+    @IBOutlet weak var expirationDateLabel: UILabel!
+    
     static let ChangeSize = 10.0
     
     override func awakeFromNib() {
