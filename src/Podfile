@@ -9,6 +9,7 @@ platform :ios, '13.0'
 def shared_pod
     pod 'RxSwift' , '~> 5'
     pod 'RxCocoa', '~> 5'
+    pod 'RxDataSources', '~> 4'
 end
 
 def test_shared_pod
