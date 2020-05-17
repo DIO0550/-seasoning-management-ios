@@ -12,17 +12,26 @@ import RxSwift
 import RxDataSources
 
 struct SMUsingSeasoningCollectionViewCellSectionOfModel {
-    var header: String
-    var items: [Item]
+    public var header: String
+    public var items: [Item]
+    
+    init(header: String, items: [Item]) {
+        self.header = header
+        self.items = items
+    }
 }
 
-extension SMUsingSeasoningCollectionViewCellSectionOfModel: SectionModelType {
+extension SMUsingSeasoningCollectionViewCellSectionOfModel: AnimatableSectionModelType {
     
     typealias Item = SMUsingSeasoningCollectionViewCellModel
     
-    init(original: SMUsingSeasoningCollectionViewCellSectionOfModel, items: [SMUsingSeasoningCollectionViewCellModel]) {
+    init(original: SMUsingSeasoningCollectionViewCellSectionOfModel, items: [Item]) {
         self = original
         self.items = items
     }
     
+    var identity: String {
+        return self.header
+    }
 }
+

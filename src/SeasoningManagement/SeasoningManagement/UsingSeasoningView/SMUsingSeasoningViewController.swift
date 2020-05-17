@@ -23,7 +23,8 @@ class SMUsingSeasoningViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    var dataSource: RxCollectionViewSectionedReloadDataSource<SMUsingSeasoningCollectionViewCellSectionOfModel>?
+    var dataSource: RxCollectionViewSectionedAnimatedDataSource<SMUsingSeasoningCollectionViewCellSectionOfModel>?
+    var viewModel: SMUsingSeasoningCollectionViewModel = SMUsingSeasoningCollectionViewModel()
 
     @IBOutlet weak var usingSeasoningListCollectionView: UICollectionView! {
         didSet {
@@ -36,7 +37,7 @@ class SMUsingSeasoningViewController: UIViewController {
     override func viewDidLoad() {
         self.setupFlowLayout()
         
-        let dataSource = RxCollectionViewSectionedReloadDataSource<SMUsingSeasoningCollectionViewCellSectionOfModel>(
+        let dataSource = RxCollectionViewSectionedAnimatedDataSource<SMUsingSeasoningCollectionViewCellSectionOfModel>(
           configureCell: { dataSource, collectionView, indexPath, item in
             let usingSeasoningCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: SMCommonConst.SMUsingSeasoningCollectionViewCellIndentifier, for: indexPath) as! SMUsingSeasoningCollectionViewCell
             let model: SMUsingSeasoningCollectionViewCellModel = dataSource[indexPath]
@@ -45,30 +46,19 @@ class SMUsingSeasoningViewController: UIViewController {
             return usingSeasoningCollectionViewCell
         })
         
-        self.dataSource = dataSource
-        
         self.addUsingSeasoningButton.rx.tap
             .subscribe(onNext: { [weak self] in
+                self?.viewModel.addUsingSeasoning(model: SMUsingSeasoningCollectionViewCellModel(seasoningName: "マヨネーズ", expirationDate: "2020/09/09"))
             })
             .disposed(by: disposeBag)
         
-        let sections = [
-            SMUsingSeasoningCollectionViewCellSectionOfModel(header: "First", items: [
-                SMUsingSeasoningCollectionViewCellModel(seasoningName: "ケチャップ", expirationDate: "2020/04/05"),
-                SMUsingSeasoningCollectionViewCellModel(seasoningName: "めんみ", expirationDate: "2020/04/05")
-            ]),
-            SMUsingSeasoningCollectionViewCellSectionOfModel(header: "Second", items: [
-                SMUsingSeasoningCollectionViewCellModel(seasoningName: "マヨネーズ", expirationDate: "2020/04/05"),
-                SMUsingSeasoningCollectionViewCellModel(seasoningName: "醤油", expirationDate: "2020/04/05")
-            ])
-        ]
-
-        Observable.just(sections)
-            .bind(to: self.usingSeasoningListCollectionView.rx.items(dataSource: dataSource))
-            .disposed(by: disposeBag)
-
+        self.dataSource = dataSource
+        
         self.usingSeasoningListCollectionView.rx.setDelegate(self)
             .disposed(by: disposeBag)
+        
+        self.viewModel.sectionsObservable()
+            .bind(to: self.usingSeasoningListCollectionView.rx.items(dataSource: self.dataSource!)).disposed(by: disposeBag)
     }
     
     

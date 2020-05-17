@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import RxDataSources
 
-struct SMUsingSeasoningCollectionViewCellModel {
+struct SMUsingSeasoningCollectionViewCellModel: IdentifiableType, Equatable {
     var seasoningName: String
     var expirationDate: String
+    
+    typealias Identity = String
+    var identity: String {
+        return id
+    }
+    let id: String = UUID().uuidString
 }

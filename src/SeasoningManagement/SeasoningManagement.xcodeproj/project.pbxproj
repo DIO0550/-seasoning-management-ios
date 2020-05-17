@@ -27,6 +27,7 @@
 		3A9DC22B2466E2A0000A7AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22A2466E2A0000A7AB3 /* Assets.xcassets */; };
 		3A9DC22E2466E2A0000A7AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22C2466E2A0000A7AB3 /* LaunchScreen.storyboard */; };
 		3A9DC2392466E2A1000A7AB3 /* SeasoningManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2382466E2A1000A7AB3 /* SeasoningManagementTests.swift */; };
+		3AB4E67E2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E67D2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		3A9DC2342466E2A1000A7AB3 /* SeasoningManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasoningManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DC2382466E2A1000A7AB3 /* SeasoningManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasoningManagementTests.swift; sourceTree = "<group>"; };
 		3A9DC23A2466E2A1000A7AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB4E67D2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMUsingSeasoningCollectionViewModel.swift; sourceTree = "<group>"; };
 		8DE0CEDFF81FA65B795A7C0A /* Pods-SeasoningManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagement.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagement/Pods-SeasoningManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		CF187730ECA040F96406FA8A /* Pods_SeasoningManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D8ADF55958765BB38D7014 /* Pods-SeasoningManagementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagementTests.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagementTests/Pods-SeasoningManagementTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		3A828D992467C54A00A05F01 /* UsingSeasoningView */ = {
 			isa = PBXGroup;
 			children = (
+				3AB4E67C2471467100D52DDD /* ViewModel */,
 				3A70737D24700A4F00BACA4B /* Model */,
 				3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */,
 				3A828DA124681B8100A05F01 /* SMUsingSeasoningViewController+CollectionView.swift */,
@@ -214,6 +217,14 @@
 				3A9DC23A2466E2A1000A7AB3 /* Info.plist */,
 			);
 			path = SeasoningManagementTests;
+			sourceTree = "<group>";
+		};
+		3AB4E67C2471467100D52DDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3AB4E67D2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C51F9EFD19149A55FB21C80B /* Pods */ = {
@@ -448,6 +459,7 @@
 				3A166B88246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift in Sources */,
 				3A707381247012E700BACA4B /* SMUsingSeasoningCollectionViewCellSectionOfModel.swift in Sources */,
 				3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */,
+				3AB4E67E2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift in Sources */,
 				3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */,
 				3A70737F24700A7A00BACA4B /* SMUsingSeasoningCollectionViewCellModel.swift in Sources */,
 				3A04E5FB246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift in Sources */,
