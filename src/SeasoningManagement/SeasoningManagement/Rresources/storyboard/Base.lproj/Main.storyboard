@@ -63,7 +63,7 @@
                     <connections>
                         <outlet property="addUsingSeasoningButton" destination="WPk-XA-Lcc" id="m7E-Xs-eTH"/>
                         <outlet property="usingSeasoningListCollectionView" destination="VQv-CB-55Q" id="Ked-Ed-J15"/>
-                        <segue destination="fk7-9i-7Db" kind="show" id="PSt-wX-wzf"/>
+                        <segue destination="fk7-9i-7Db" kind="show" identifier="SMDetailUsingSeasoningViewControllerScene" id="PSt-wX-wzf"/>
                         <segue destination="w86-1q-fnA" kind="show" identifier="SMAddUsingSeasoingViewControllerShowIndentifier" id="x03-eg-xbd"/>
                     </connections>
                 </viewController>
