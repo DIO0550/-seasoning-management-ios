@@ -15,13 +15,15 @@ class SMUsingSeasoningCollectionViewModel {
     typealias Section = SMUsingSeasoningCollectionViewCellSectionOfModel
     typealias Model = SMUsingSeasoningCollectionViewCellModel
     
-    private let items = BehaviorRelay<[Section]>(value: [])
+    private let items = BehaviorRelay<[Section]>(value: [SMUsingSeasoningCollectionViewCellSectionOfModel(
+        header: "A",
+        items: [SMUsingSeasoningCollectionViewCellModel(seasoningName: "AAAAA", expirationDate: "BBBBB")])])
     
     func sectionsObservable() -> Observable<[Section]> {
         return self.items.asObservable()
     }
     
-    func addUsingSeasoning(model: Model) {
+    func addUsingSeasoning(model: Model, sectionHeader: String) {
         let uuid = UUID().uuidString
         var value = self.items.value
         value.append(SMUsingSeasoningCollectionViewCellSectionOfModel(header: uuid, items: [model]))
