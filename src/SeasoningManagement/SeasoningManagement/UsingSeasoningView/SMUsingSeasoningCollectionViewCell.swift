@@ -35,6 +35,8 @@ class SMUsingSeasoningCollectionViewCell: UICollectionViewCell {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.decreaseViewSize(size: CGSize(width: SMUsingSeasoningCollectionViewCell.ChangeSize, height: SMUsingSeasoningCollectionViewCell.ChangeSize))
         self.backgroundColor = UIColor.init(named: "SMUsingSeasoningCollectionViewCellTouchBackgroundColor")
+        
+        super.touchesBegan(touches, with: event)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
