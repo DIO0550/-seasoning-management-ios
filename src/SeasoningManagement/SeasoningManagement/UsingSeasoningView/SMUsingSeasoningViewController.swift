@@ -47,8 +47,9 @@ class SMUsingSeasoningViewController: UIViewController {
         })
         
         self.addUsingSeasoningButton.rx.tap
-            .subscribe(onNext: { [weak self] in
-                self?.viewModel.addUsingSeasoning(model: SMUsingSeasoningCollectionViewCellModel(seasoningName: "マヨネーズ", expirationDate: "2020/09/09"))
+            .asDriver().drive(onNext: { [weak self] in
+                self?.performSegue(withIdentifier: "SMAddUsingSeasoingViewControllerShowIndentifier",
+                                   sender: nil)
             })
             .disposed(by: disposeBag)
         
@@ -58,7 +59,15 @@ class SMUsingSeasoningViewController: UIViewController {
             .disposed(by: disposeBag)
         
         self.viewModel.sectionsObservable()
-            .bind(to: self.usingSeasoningListCollectionView.rx.items(dataSource: self.dataSource!)).disposed(by: disposeBag)
+            .bind(to: self.usingSeasoningListCollectionView.rx.items(dataSource: self.dataSource!))
+            .disposed(by: disposeBag)
+        
+        self.usingSeasoningListCollectionView.rx
+            .modelSelected(SMUsingSeasoningCollectionViewCellModel.self)
+            .subscribe(onNext: { [weak self] model in
+                self?.performSegue(withIdentifier: "SMDetailUsingSeasoningViewControllerScene",
+                sender: nil)
+            }).disposed(by: disposeBag)
     }
     
     
@@ -72,4 +81,3 @@ class SMUsingSeasoningViewController: UIViewController {
         self.usingSeasoningListCollectionView.collectionViewLayout = layout
     }
 }
-
