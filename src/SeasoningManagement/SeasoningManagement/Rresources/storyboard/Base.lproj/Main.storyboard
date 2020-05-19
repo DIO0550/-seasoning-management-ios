@@ -17,7 +17,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gOq-Mw-k0O"/>
                     </view>
-                    <navigationItem key="navigationItem" id="t33-gT-KxI"/>
+                    <navigationItem key="navigationItem" id="t33-gT-KxI">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="B3g-HX-nBH"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnS-3k-gjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +83,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rwm-6q-Zbb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6BD-Z3-9kz"/>
+                    <navigationItem key="navigationItem" id="6BD-Z3-9kz">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="vbs-Z8-e2Q"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RX4-C2-kbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
