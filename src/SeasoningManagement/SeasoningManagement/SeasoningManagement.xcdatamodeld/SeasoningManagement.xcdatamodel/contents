@@ -2,17 +2,18 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G4032" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Seasoning" representedClassName="Seasoning" syncable="YES" codeGenerationType="class">
         <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="inUse" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inUse" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="openingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SeasoningData"/>
     </entity>
     <entity name="SeasoningData" representedClassName="SeasoningData" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Seasoning" positionX="290.140625" positionY="45.734375" width="128" height="118"/>
-        <element name="SeasoningData" positionX="-45" positionY="27" width="128" height="73"/>
+        <element name="SeasoningData" positionX="-45" positionY="27" width="128" height="88"/>
     </elements>
 </model>
