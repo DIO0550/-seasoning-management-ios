@@ -130,6 +130,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="在庫" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="stockSeasoningTableView" destination="L9c-pM-bmY" id="chp-iq-cnc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

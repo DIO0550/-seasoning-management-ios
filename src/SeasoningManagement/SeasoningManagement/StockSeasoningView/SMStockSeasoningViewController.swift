@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxDataSources
 
 class SMStockSeasoningViewController: UIViewController {
-
+    @IBOutlet weak var stockSeasoningTableView: UITableView!
+    
 }
 
