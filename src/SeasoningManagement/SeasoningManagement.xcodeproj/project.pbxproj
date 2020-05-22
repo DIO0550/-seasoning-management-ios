@@ -145,10 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */,
+				3AA055E22476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift */,
 				3A8E682A24756B8900033414 /* ViewModel */,
 				3A8E682924756B6900033414 /* Model */,
 				3A8E6826247566F700033414 /* nib */,
-				3AA055E22476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift */,
 			);
 			path = StockSeasoningView;
 			sourceTree = "<group>";
