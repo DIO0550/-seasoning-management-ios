@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-FR-Poa">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-FR-Poa">
                     <rect key="frame" x="11" y="11" width="128" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="RcD-FR-Poa" secondAttribute="height" multiplier="1:1" id="OQI-NS-NAs"/>
@@ -66,4 +66,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="417.1875"/>
         </view>
     </objects>
+    <resources>
+        <image name="NoImage" width="16" height="16"/>
+    </resources>
 </document>
