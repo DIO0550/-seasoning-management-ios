@@ -11,8 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class SMUsingSeasoningViewController: UIViewController {
-    var usingSeasoningList: Array = ["Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3", "Seasoning1", "Seasoning2", "Seasoning3"]
+class SMUsingSeasoningViewController: UIViewController, UICollectionViewDelegate {
     
     struct SMUsingSeasoningListCollectionViewMergin {
         static let Left: CGFloat = 10.0

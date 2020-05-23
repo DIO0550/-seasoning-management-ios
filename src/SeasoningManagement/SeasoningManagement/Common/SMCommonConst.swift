@@ -12,4 +12,6 @@ struct SMCommonConst {
     static let SMUsingSeasoningCollectionViewCellIndentifier = "SMUsingSeasoningCollectionViewCell"
     
     static let SMAddUsingSeasoingViewControllerShowIndentifier = "SMAddUsingSeasoingViewControllerShowIndentifier"
+    
+    static let SMStockSeasoningTableViewCellIdentifier = "SMStockSeasoningTableViewCell"
 }

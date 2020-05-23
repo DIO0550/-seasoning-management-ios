@@ -9,10 +9,14 @@
 import UIKit
 
 class SMStockSeaoningTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var seaoningImage: UIImageView!
+    @IBOutlet weak var seaoningName: UILabel!
+    @IBOutlet weak var seaoningCount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.setupLayer()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,4 +25,8 @@ class SMStockSeaoningTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    private func setupLayer() {
+        self.layer.borderWidth = 2.0
+        self.layer.backgroundColor = UIColor.black.cgColor
+    }
 }

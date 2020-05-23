@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sfz-ah-hNv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="5vE-7I-jJ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <viewLayoutGuide key="safeArea" id="gOq-Mw-k0O"/>
                     </view>
                     <navigationItem key="navigationItem" id="t33-gT-KxI">
@@ -23,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnS-3k-gjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1668" y="-1980"/>
+            <point key="canvasLocation" x="-1586" y="-1179"/>
         </scene>
         <!--使用中-->
         <scene sceneID="hNz-n2-bh7">
@@ -35,7 +36,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-XA-Lcc">
                                 <rect key="frame" x="0.0" y="763" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9mR-k2-CI6"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <constraints>
                             <constraint firstItem="WPk-XA-Lcc" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="2K1-Id-Tsm"/>
                             <constraint firstItem="WPk-XA-Lcc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Fju-Mn-7Xz"/>
@@ -66,6 +66,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="使用中" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="使用中" id="X4k-C8-nwm"/>
                     <connections>
                         <outlet property="addUsingSeasoningButton" destination="WPk-XA-Lcc" id="m7E-Xs-eTH"/>
                         <outlet property="usingSeasoningListCollectionView" destination="VQv-CB-55Q" id="Ked-Ed-J15"/>
@@ -75,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884.05797101449286" y="-1980.1339285714284"/>
+            <point key="canvasLocation" x="-899" y="-1894"/>
         </scene>
         <!--Add Using Seasoning View Controller-->
         <scene sceneID="oX7-zc-Ms0">
@@ -84,7 +85,7 @@
                     <view key="view" contentMode="scaleToFill" id="Svr-8I-wvq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <viewLayoutGuide key="safeArea" id="Rwm-6q-Zbb"/>
                     </view>
                     <navigationItem key="navigationItem" id="6BD-Z3-9kz">
@@ -93,7 +94,123 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RX4-C2-kbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-880" y="-1271"/>
+            <point key="canvasLocation" x="-884" y="-1179"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V5f-cV-9Mq">
+            <objects>
+                <viewController id="7Ex-R4-64a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zLT-6o-ffG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
+                        <viewLayoutGuide key="safeArea" id="JD9-QX-VD0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Vp-Ic-qOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C95-wK-WGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="-1179"/>
+        </scene>
+        <!--データ追加-->
+        <scene sceneID="uDT-Ec-af8">
+            <objects>
+                <viewController id="aJ4-m2-cDi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mP4-dy-lUU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="名前" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-iJ-7hj">
+                                <rect key="frame" x="20" y="108" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sjH-pC-yGV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath=".layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="種類（調味料・お菓子・etc...）" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="1AQ-zS-ZDJ">
+                                <rect key="frame" x="20" y="168" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bu6-jL-hx0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath=".layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="値段" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="wgl-b9-Uz2">
+                                <rect key="frame" x="20" y="228" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cef-OS-SYm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath=".layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="カロリー" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ifz-Yn-ahW">
+                                <rect key="frame" x="20" y="288" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tqe-R0-ONb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath=".layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
+                        <constraints>
+                            <constraint firstItem="1AQ-zS-ZDJ" firstAttribute="top" secondItem="ULZ-iJ-7hj" secondAttribute="bottom" constant="20" id="6Wy-P6-yV7"/>
+                            <constraint firstItem="2Ae-jq-42y" firstAttribute="trailing" secondItem="ULZ-iJ-7hj" secondAttribute="trailing" constant="20" id="GGL-0j-oqb"/>
+                            <constraint firstItem="2Ae-jq-42y" firstAttribute="trailing" secondItem="Ifz-Yn-ahW" secondAttribute="trailing" constant="20" id="GiG-7u-Aav"/>
+                            <constraint firstItem="wgl-b9-Uz2" firstAttribute="top" secondItem="1AQ-zS-ZDJ" secondAttribute="bottom" constant="20" id="HFj-Tb-xZD"/>
+                            <constraint firstItem="Ifz-Yn-ahW" firstAttribute="top" secondItem="wgl-b9-Uz2" secondAttribute="bottom" constant="20" id="Mqb-LS-fYh"/>
+                            <constraint firstItem="1AQ-zS-ZDJ" firstAttribute="leading" secondItem="2Ae-jq-42y" secondAttribute="leading" constant="20" id="Q7t-sO-NTc"/>
+                            <constraint firstItem="2Ae-jq-42y" firstAttribute="trailing" secondItem="1AQ-zS-ZDJ" secondAttribute="trailing" constant="20" id="VjW-C3-plb"/>
+                            <constraint firstItem="Ifz-Yn-ahW" firstAttribute="leading" secondItem="2Ae-jq-42y" secondAttribute="leading" constant="20" id="YLv-qG-oPB"/>
+                            <constraint firstItem="wgl-b9-Uz2" firstAttribute="leading" secondItem="2Ae-jq-42y" secondAttribute="leading" constant="20" id="ZH8-Jb-ZqD"/>
+                            <constraint firstItem="ULZ-iJ-7hj" firstAttribute="leading" secondItem="2Ae-jq-42y" secondAttribute="leading" constant="20" id="cbP-9r-vc9"/>
+                            <constraint firstItem="2Ae-jq-42y" firstAttribute="trailing" secondItem="wgl-b9-Uz2" secondAttribute="trailing" constant="20" id="kqC-xk-sem"/>
+                            <constraint firstItem="ULZ-iJ-7hj" firstAttribute="top" secondItem="2Ae-jq-42y" secondAttribute="top" constant="20" id="wv5-gI-l7J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Ae-jq-42y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="データ追加" id="sWW-BB-gwv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jt6-q9-SEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="-1178.5714285714284"/>
         </scene>
         <!--設定-->
         <scene sceneID="CBg-TJ-x60">
@@ -106,10 +223,11 @@
                         <viewLayoutGuide key="safeArea" id="fFe-5j-d6f"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="second" id="idT-L9-KzA"/>
+                    <navigationItem key="navigationItem" id="3yg-5K-Vq1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7E-r2-C9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="-1980"/>
+            <point key="canvasLocation" x="1523" y="-1894"/>
         </scene>
         <!--在庫-->
         <scene sceneID="wg7-f3-ORb">
@@ -119,66 +237,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-pM-bmY">
-                                <rect key="frame" x="20" y="136" width="374" height="584"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-pM-bmY">
+                                <rect key="frame" x="0.0" y="178" width="414" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
+                        <constraints>
+                            <constraint firstItem="L9c-pM-bmY" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="PQr-iV-exL"/>
+                            <constraint firstItem="L9c-pM-bmY" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="dXU-Mt-H2u"/>
+                            <constraint firstItem="L9c-pM-bmY" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="90" id="e9Q-vI-Lu4"/>
+                            <constraint firstItem="L9c-pM-bmY" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="qr8-w9-GLg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="在庫" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZUF-Bs-tzM"/>
                     <connections>
                         <outlet property="stockSeasoningTableView" destination="L9c-pM-bmY" id="chp-iq-cnc"/>
+                        <segue destination="7Ex-R4-64a" kind="show" id="bGv-cb-GeX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110.14492753623189" y="-1980.1339285714284"/>
+            <point key="canvasLocation" x="-110.14492753623189" y="-1894.4196428571427"/>
         </scene>
-        <!--Item-->
+        <!--データ-->
         <scene sceneID="NuE-3M-8NG">
             <objects>
-                <viewController id="ipb-AG-fpG" sceneMemberID="viewController">
+                <viewController id="ipb-AG-fpG" customClass="SMAddSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jV1-q5-4ET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-kh-jRv">
-                                <rect key="frame" x="20" y="88" width="374" height="643"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-kh-jRv">
+                                <rect key="frame" x="0.0" y="178" width="414" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
+                        <constraints>
+                            <constraint firstItem="j8t-kh-jRv" firstAttribute="bottom" secondItem="UqR-B9-bQH" secondAttribute="bottom" id="7Cz-0P-Ajv"/>
+                            <constraint firstItem="j8t-kh-jRv" firstAttribute="top" secondItem="UqR-B9-bQH" secondAttribute="top" constant="90" id="9gQ-Rf-FGN"/>
+                            <constraint firstItem="j8t-kh-jRv" firstAttribute="leading" secondItem="UqR-B9-bQH" secondAttribute="leading" id="PLl-3W-MAL"/>
+                            <constraint firstItem="j8t-kh-jRv" firstAttribute="trailing" secondItem="UqR-B9-bQH" secondAttribute="trailing" id="Vy1-83-8Tv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UqR-B9-bQH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="RyN-SC-Uto"/>
                     <toolbarItems>
                         <barButtonItem title="Item" image="plus" catalog="system" id="fJC-IK-dAr"/>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" title="データ" id="khl-eK-INc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wtT-9A-ruh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addDataBarButton" destination="wtT-9A-ruh" id="r4X-kX-oiC"/>
+                        <segue destination="aJ4-m2-cDi" kind="show" identifier="SMInputAddSeasoningDataViewControllerShowIdentifier" id="hDU-jN-VPB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHd-Tc-sM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628.98550724637687" y="-1979.4642857142856"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FCT-nU-c0G">
-            <objects>
-                <navigationController id="Sfz-ah-hNv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eyp-od-yR0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="gem-qy-hbE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gZk-q8-yur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1019" y="-2709"/>
+            <point key="canvasLocation" x="647.82608695652175" y="-1894.4196428571427"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -191,20 +312,92 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="ipb-AG-fpG" kind="relationship" relationship="viewControllers" id="GM5-Sn-Hfx"/>
-                        <segue destination="i7B-Mk-zJG" kind="relationship" relationship="viewControllers" id="JH0-NK-KuO"/>
+                        <segue destination="L0T-bs-5pM" kind="relationship" relationship="viewControllers" id="cBO-49-O9o"/>
+                        <segue destination="cq3-sY-At2" kind="relationship" relationship="viewControllers" id="gXk-8M-O9c"/>
+                        <segue destination="FzF-KZ-Utw" kind="relationship" relationship="viewControllers" id="jiL-pL-zP5"/>
+                        <segue destination="doa-xQ-cAX" kind="relationship" relationship="viewControllers" id="Wha-GI-rUl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110" y="-2709"/>
+            <point key="canvasLocation" x="-110" y="-3508"/>
+        </scene>
+        <!--使用中-->
+        <scene sceneID="bV5-8c-oYf">
+            <objects>
+                <navigationController id="L0T-bs-5pM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="使用中" image="first" id="jaf-SQ-axz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UoS-sY-gEC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="ygX-hC-8Yd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvz-W8-TTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-900" y="-2748"/>
+        </scene>
+        <!--在庫-->
+        <scene sceneID="mOi-ng-eka">
+            <objects>
+                <navigationController id="cq3-sY-At2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="在庫" image="first" id="EJh-cq-9eQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y1U-oI-yWq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="Tw5-Tp-9YN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyv-c6-ivB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="-2748"/>
+        </scene>
+        <!--データ-->
+        <scene sceneID="eRg-dH-ujK">
+            <objects>
+                <navigationController id="FzF-KZ-Utw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="データ" image="first" id="MKR-V2-tsp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y8d-dg-gxG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ipb-AG-fpG" kind="relationship" relationship="rootViewController" id="Zlz-EL-Lea"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84c-IX-oXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="-2747"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="xQX-Gc-jGP">
+            <objects>
+                <navigationController id="doa-xQ-cAX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="設定" image="ellipsis" catalog="system" id="vgr-IU-IgC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DCf-01-nB7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i7B-Mk-zJG" kind="relationship" relationship="rootViewController" id="MII-FZ-5IV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5f-Bf-S5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="-2748"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="first" width="30" height="30"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
+        <namedColor name="SeasoningManagementColor">
+            <color red="0.14946142304591112" green="0.57332645939086291" blue="0.40046890489741738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
