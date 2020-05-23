@@ -58,6 +58,11 @@
                 <constraint firstAttribute="bottom" secondItem="RcD-FR-Poa" secondAttribute="bottom" constant="11" id="xd9-2x-quT"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="seaoningCount" destination="hMV-VB-C9p" id="vNP-Hf-dmJ"/>
+                <outlet property="seaoningImage" destination="RcD-FR-Poa" id="FlA-8P-A46"/>
+                <outlet property="seaoningName" destination="gXh-7d-CV5" id="t3l-Yd-2DK"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="417.1875"/>
         </view>
     </objects>
