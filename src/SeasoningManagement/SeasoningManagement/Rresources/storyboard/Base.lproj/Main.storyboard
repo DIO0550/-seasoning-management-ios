@@ -115,7 +115,7 @@
         <!--データ追加-->
         <scene sceneID="uDT-Ec-af8">
             <objects>
-                <viewController id="aJ4-m2-cDi" sceneMemberID="viewController">
+                <viewController id="aJ4-m2-cDi" customClass="SMInputAddSeasoningDataViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mP4-dy-lUU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Ae-jq-42y"/>
                     </view>
-                    <navigationItem key="navigationItem" title="データ追加" id="sWW-BB-gwv"/>
+                    <navigationItem key="navigationItem" title="データ追加" id="sWW-BB-gwv">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="TEK-Nn-TS4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calorieLabel" destination="Ifz-Yn-ahW" id="aMw-Su-Jk4"/>
+                        <outlet property="doneBarButton" destination="TEK-Nn-TS4" id="Gk8-qI-pP8"/>
+                        <outlet property="nameLabel" destination="ULZ-iJ-7hj" id="LCM-oX-2f7"/>
+                        <outlet property="priceLabel" destination="wgl-b9-Uz2" id="cbe-T4-Pm6"/>
+                        <outlet property="typeLabel" destination="1AQ-zS-ZDJ" id="WKm-dp-0FF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt6-q9-SEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -397,7 +406,7 @@
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
         <namedColor name="SeasoningManagementColor">
-            <color red="0.14946142304591112" green="0.57332645939086291" blue="0.40046890489741738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.14900000393390656" green="0.57300001382827759" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
