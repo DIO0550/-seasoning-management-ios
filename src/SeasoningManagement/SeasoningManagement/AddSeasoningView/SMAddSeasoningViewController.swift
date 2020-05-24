@@ -19,7 +19,7 @@ class SMAddSeasoningViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addDataBarButton.rx.tap .asDriver().drive(onNext: { [weak self] in
+        self.addDataBarButton.rx.tap.asDriver().drive(onNext: { [weak self] in
             self?.performSegue(withIdentifier: "SMInputAddSeasoningDataViewControllerShowIdentifier",
                                sender: nil)
             })
