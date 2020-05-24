@@ -77,6 +77,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func createSeasoningData () -> SeasoningData {
+        let context = persistentContainer.viewContext
+        let seasoningData = NSEntityDescription.insertNewObject(forEntityName: "SeasoningData", into: context) as! SeasoningData
+        return seasoningData
+    }
 
 }
 
