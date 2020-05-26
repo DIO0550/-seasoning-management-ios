@@ -78,10 +78,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func createSeasoningData () -> SeasoningData {
+    func createSeasoningData() -> SeasoningData {
         let context = persistentContainer.viewContext
         let seasoningData = NSEntityDescription.insertNewObject(forEntityName: "SeasoningData", into: context) as! SeasoningData
         return seasoningData
+    }
+    
+    func fetchAllSeasonignData() -> [SeasoningData] {
+        let context = persistentContainer.viewContext
+        let seasoningDataFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "SeasoningData")
+        
+        do {
+            let seasoningData = try context.fetch(seasoningDataFetch) as! [SeasoningData]
+            return seasoningData
+        } catch {
+            fatalError("Failed SeasoningData: \(error)")
+        }
     }
 
 }
