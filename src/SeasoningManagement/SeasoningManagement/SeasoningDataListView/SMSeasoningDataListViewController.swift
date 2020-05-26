@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class SMAddSeasoningViewController: UIViewController {
+class SMSeasoningDataListViewController: UIViewController {
     @IBOutlet weak var addDataBarButton: UIBarButtonItem!
     
     let disposeBag = DisposeBag()
