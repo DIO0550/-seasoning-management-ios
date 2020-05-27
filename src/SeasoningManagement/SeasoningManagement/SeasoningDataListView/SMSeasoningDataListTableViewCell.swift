@@ -9,7 +9,9 @@
 import UIKit
 
 class SMSeasoningDataListTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var seasoningNameLabel: UILabel!
+    @IBOutlet weak var seasoningTypeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -25,6 +25,7 @@
 		3A8E682C24756BE200033414 /* SMStockSeasoningTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682B24756BE200033414 /* SMStockSeasoningTableViewModel.swift */; };
 		3A8E682E24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */; };
 		3A8E683024756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */; };
+		3A9D4CA5247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */; };
 		3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */; };
 		3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */; };
 		3A9DC2212466E29F000A7AB3 /* SMUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2202466E29F000A7AB3 /* SMUsingSeasoningViewController.swift */; };
@@ -69,6 +70,7 @@
 		3A8E682B24756BE200033414 /* SMStockSeasoningTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewModel.swift; sourceTree = "<group>"; };
 		3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellModel.swift; sourceTree = "<group>"; };
 		3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellSectionOfModel.swift; sourceTree = "<group>"; };
+		3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListTableViewModel.swift; sourceTree = "<group>"; };
 		3A9DC2192466E29F000A7AB3 /* SeasoningManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasoningManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		3AA28D762478F7D000DCACB8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */,
 				3A9DC2292466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld in Sources */,
 				3A65B0342469842800267FFC /* SMCommonConst.swift in Sources */,
+				3A9D4CA5247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

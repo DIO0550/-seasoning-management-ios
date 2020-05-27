@@ -26,7 +26,7 @@ extension SMSeasoningDataListTableViewCellSectionOfModel: AnimatableSectionModel
     
     typealias Item = SMSeasoningDataListTableViewCellModel
     
-    init(original: SMSeasoningDataListTableViewCellModel, items: [Item]) {
+    init(original: SMSeasoningDataListTableViewCellSectionOfModel, items: [Item]) {
         self = original
         self.items = items
     }

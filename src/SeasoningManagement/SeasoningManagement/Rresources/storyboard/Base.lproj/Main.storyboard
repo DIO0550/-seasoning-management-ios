@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -12,7 +13,7 @@
             <objects>
                 <viewController id="fk7-9i-7Db" customClass="SMDetailUsingSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vE-7I-jJ5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <viewLayoutGuide key="safeArea" id="gOq-Mw-k0O"/>
@@ -30,18 +31,18 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="SMUsingSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-XA-Lcc">
-                                <rect key="frame" x="0.0" y="501" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="763" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9mR-k2-CI6"/>
                                 </constraints>
                                 <state key="normal" title="追加"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VQv-CB-55Q">
-                                <rect key="frame" x="20" y="74" width="560" height="407"/>
+                                <rect key="frame" x="20" y="118" width="374" height="625"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="NmW-np-tSa">
                                     <size key="itemSize" width="120" height="50"/>
@@ -82,7 +83,7 @@
             <objects>
                 <viewController id="w86-1q-fnA" customClass="SMAddUsingSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Svr-8I-wvq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <viewLayoutGuide key="safeArea" id="Rwm-6q-Zbb"/>
@@ -100,7 +101,7 @@
             <objects>
                 <viewController id="7Ex-R4-64a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLT-6o-ffG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="SeasoningManagementColor"/>
                         <viewLayoutGuide key="safeArea" id="JD9-QX-VD0"/>
@@ -116,11 +117,11 @@
             <objects>
                 <viewController id="aJ4-m2-cDi" customClass="SMInputAddSeasoningDataViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mP4-dy-lUU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="名前" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-iJ-7hj">
-                                <rect key="frame" x="20" y="64" width="560" height="40"/>
+                                <rect key="frame" x="20" y="108" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sjH-pC-yGV"/>
@@ -137,7 +138,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="種類（調味料・お菓子・etc...）" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="1AQ-zS-ZDJ">
-                                <rect key="frame" x="20" y="124" width="560" height="40"/>
+                                <rect key="frame" x="20" y="168" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bu6-jL-hx0"/>
@@ -154,7 +155,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="値段" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="wgl-b9-Uz2">
-                                <rect key="frame" x="20" y="184" width="560" height="40"/>
+                                <rect key="frame" x="20" y="228" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cef-OS-SYm"/>
@@ -171,7 +172,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="カロリー" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ifz-Yn-ahW">
-                                <rect key="frame" x="20" y="244" width="560" height="40"/>
+                                <rect key="frame" x="20" y="288" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tqe-R0-ONb"/>
@@ -225,7 +226,7 @@
             <objects>
                 <viewController id="i7B-Mk-zJG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2K5-Jc-ywL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fFe-5j-d6f"/>
@@ -242,11 +243,11 @@
             <objects>
                 <viewController title="在庫" id="8rJ-Kc-sve" customClass="SMStockSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-pM-bmY">
-                                <rect key="frame" x="0.0" y="134" width="600" height="417"/>
+                                <rect key="frame" x="0.0" y="178" width="414" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -276,11 +277,11 @@
             <objects>
                 <viewController id="ipb-AG-fpG" customClass="SMSeasoningDataListViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jV1-q5-4ET">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-kh-jRv">
-                                <rect key="frame" x="0.0" y="134" width="600" height="417"/>
+                                <rect key="frame" x="0.0" y="178" width="414" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -302,6 +303,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addDataBarButton" destination="wtT-9A-ruh" id="r4X-kX-oiC"/>
+                        <outlet property="dataListSeasoningTableView" destination="j8t-kh-jRv" id="L65-2A-eZ1"/>
                         <segue destination="aJ4-m2-cDi" kind="show" identifier="SMInputAddSeasoningDataViewControllerShowIdentifier" id="hDU-jN-VPB"/>
                     </connections>
                 </viewController>

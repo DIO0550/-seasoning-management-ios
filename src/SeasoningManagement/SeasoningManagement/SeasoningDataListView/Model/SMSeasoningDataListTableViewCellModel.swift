@@ -16,7 +16,6 @@ struct SMSeasoningDataListTableViewCellModel: IdentifiableType, Equatable {
     
     typealias Identity = String
     var identity: String {
-        return id
+        return self.seasoningName
     }
-    let id: String = UUID().uuidString
 }
