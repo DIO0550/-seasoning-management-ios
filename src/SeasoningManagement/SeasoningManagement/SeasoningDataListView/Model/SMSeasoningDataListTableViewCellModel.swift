@@ -12,10 +12,13 @@ import RxCocoa
 import RxDataSources
 
 struct SMSeasoningDataListTableViewCellModel: IdentifiableType, Equatable {
-    var seasoningName: String
+    init(seasoningData: SeasoningData) {
+        self.seasoningData = seasoningData
+    }
+    var seasoningData: SeasoningData
     
     typealias Identity = String
     var identity: String {
-        return self.seasoningName
+        return self.seasoningData.identifier!.uuidString
     }
 }

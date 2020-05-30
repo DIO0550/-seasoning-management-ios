@@ -9,6 +9,7 @@
     </entity>
     <entity name="SeasoningData" representedClassName="SeasoningData" syncable="YES" codeGenerationType="class">
         <attribute name="calorie" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -16,6 +17,6 @@
     </entity>
     <elements>
         <element name="Seasoning" positionX="290.140625" positionY="45.734375" width="128" height="118"/>
-        <element name="SeasoningData" positionX="-45" positionY="27" width="128" height="118"/>
+        <element name="SeasoningData" positionX="-45" positionY="27" width="128" height="133"/>
     </elements>
 </model>

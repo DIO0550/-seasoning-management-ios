@@ -19,9 +19,9 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var dataListSeasoningTableView: UITableView! {
         didSet {
-            let nib = UINib(nibName: SMCommonConst.SMSesonDataListTableViewCellIdentifier, bundle: nil)
+            let nib = UINib(nibName: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, bundle: nil)
             self.dataListSeasoningTableView.register(nib,
-                                                  forCellReuseIdentifier: SMCommonConst.SMSesonDataListTableViewCellIdentifier);
+                                                  forCellReuseIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier);
         }
     }
     
@@ -38,10 +38,12 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         
         let dataSource = RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>(
             configureCell: { dataSource, tableView, indexPath, item in
-                let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSesonDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
+                let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
                 let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
-                seasoningDataListTableViewCell.seasoningNameLabel.text = model.seasoningName
+                seasoningDataListTableViewCell.seasoningNameLabel.text = model.seasoningData.name
                 return seasoningDataListTableViewCell
+        }, titleForHeaderInSection: { dataSource, index in
+            return dataSource[index].header
         })
         
         
@@ -52,6 +54,10 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         self.viewModel.sectionsObservable()
             .bind(to: self.dataListSeasoningTableView.rx.items(dataSource: self.dataSource!))
             .disposed(by: disposeBag)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewModel.updateItems()
     }
 
 }

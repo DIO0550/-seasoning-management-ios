@@ -49,8 +49,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="w7u-5k-W8K"/>
             <connections>
-                <outlet property="seaoningImage" destination="Mqi-Wv-Gqm" id="pYA-zt-Lgt"/>
-                <outlet property="seaoningName" destination="ce6-QO-z1v" id="Qo9-U9-Q9a"/>
                 <outlet property="seasoningNameLabel" destination="ce6-QO-z1v" id="tBm-6n-Qn5"/>
                 <outlet property="seasoningTypeLabel" destination="6cm-2T-hql" id="9Sd-95-FVr"/>
             </connections>

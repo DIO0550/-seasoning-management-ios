@@ -27,10 +27,11 @@ class SMInputAddSeasoningDataViewController: UIViewController {
         self.doneBarButton.rx.tap.asDriver().drive(onNext: { [weak self] in
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let seasoningData = appDelegate.createSeasoningData()
-            seasoningData.name = "醤油"
-            seasoningData.type = "調味料"
+            seasoningData.name = self?.nameLabel.text
+            seasoningData.type = self?.typeLabel.text
+            seasoningData.identifier = UUID();
             appDelegate.saveContext()
-            self?.dismiss(animated: true, completion: nil)
+            self?.navigationController?.popViewController(animated: true)
         })
         .disposed(by: disposeBag)
     }

@@ -15,5 +15,5 @@ struct SMCommonConst {
     
     static let SMStockSeasoningTableViewCellIdentifier = "SMStockSeasoningTableViewCell"
     
-    static let SMSesonDataListTableViewCellIdentifier = "SMSeasoningDataListTableViewCell"
+    static let SMSeasoningDataListTableViewCellIdentifier = "SMSeasoningDataListTableViewCell"
 }
