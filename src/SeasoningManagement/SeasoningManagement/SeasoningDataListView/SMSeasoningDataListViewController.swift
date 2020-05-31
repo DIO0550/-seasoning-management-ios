@@ -42,9 +42,11 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
                 let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
                 seasoningDataListTableViewCell.seasoningNameLabel.text = model.seasoningData.name
                 return seasoningDataListTableViewCell
-        }, titleForHeaderInSection: { dataSource, index in
-            return dataSource[index].header
-        })
+            },
+            titleForHeaderInSection: { dataSource, index in
+                return dataSource[index].header
+            }
+        )
         
         
         self.dataSource = dataSource
