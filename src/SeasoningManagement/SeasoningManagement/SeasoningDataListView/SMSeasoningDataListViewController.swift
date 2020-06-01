@@ -56,10 +56,19 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         self.viewModel.sectionsObservable()
             .bind(to: self.dataListSeasoningTableView.rx.items(dataSource: self.dataSource!))
             .disposed(by: disposeBag)
+        
+        self.dataListSeasoningTableView.rx
+            .modelSelected(SMUsingSeasoningCollectionViewCellModel.self)
+            .subscribe(onNext: { [weak self] model in
+                self?.performSegue(withIdentifier: , sender: )
+        }).disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.viewModel.updateItems()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    }
 }
