@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SMSeasoningDataEditViewController: UIViewController {
+class SMSeasoningDataEditViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

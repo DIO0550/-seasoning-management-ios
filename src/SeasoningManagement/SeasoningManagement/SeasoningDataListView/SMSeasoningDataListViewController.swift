@@ -58,9 +58,9 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
             .disposed(by: disposeBag)
         
         self.dataListSeasoningTableView.rx
-            .modelSelected(SMUsingSeasoningCollectionViewCellModel.self)
+            .modelSelected(SMSeasoningDataListTableViewCellModel.self)
             .subscribe(onNext: { [weak self] model in
-                self?.performSegue(withIdentifier: , sender: )
+                self?.performSegue(withIdentifier: "SMSeasoningDataEditViewControllerIdentifier", sender: nil)
         }).disposed(by: disposeBag)
     }
     
