@@ -9,6 +9,19 @@
 import UIKit
 
 class SMSeasoningDataEditViewController: UITableViewController {
+    
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var typeLabel: UITextField!
+    @IBOutlet weak var calorieLabel: UITextField!
+    
+    @IBOutlet weak var proteinLabel: UITextField!
+    
+    @IBOutlet weak var lipidLabel: UITextField!
+    
+    @IBOutlet weak var sugarLabel: UITextField!
+    
+    @IBOutlet weak var carbohydrateLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
