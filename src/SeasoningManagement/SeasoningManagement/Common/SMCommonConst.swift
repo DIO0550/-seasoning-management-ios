@@ -10,10 +10,11 @@ import UIKit
 
 struct SMCommonConst {
     static let SMUsingSeasoningCollectionViewCellIndentifier = "SMUsingSeasoningCollectionViewCell"
-    
     static let SMAddUsingSeasoingViewControllerShowIndentifier = "SMAddUsingSeasoingViewControllerShowIndentifier"
-    
     static let SMStockSeasoningTableViewCellIdentifier = "SMStockSeasoningTableViewCell"
-    
     static let SMSeasoningDataListTableViewCellIdentifier = "SMSeasoningDataListTableViewCell"
+    
+    // MARK: Entity Name
+    static let SeasoningDataEntityName = "SeasoningData"
+    static let SeasoningNutrientsEntityName = "SeasoningNutrients"
 }

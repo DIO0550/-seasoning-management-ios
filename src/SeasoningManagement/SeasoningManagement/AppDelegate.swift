@@ -80,13 +80,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func createSeasoningData() -> SeasoningData {
         let context = persistentContainer.viewContext
-        let seasoningData = NSEntityDescription.insertNewObject(forEntityName: "SeasoningData", into: context) as! SeasoningData
+        let seasoningData = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningDataEntityName, into: context) as! SeasoningData
+        seasoningData.nutrients = self.createSeasoningNutrients()
         return seasoningData
     }
     
     func fetchAllSeasonignData() -> [SeasoningData] {
         let context = persistentContainer.viewContext
-        let seasoningDataFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "SeasoningData")
+        let seasoningDataFetch = NSFetchRequest<NSFetchRequestResult>(entityName: SMCommonConst.SeasoningDataEntityName)
         
         do {
             let seasoningData = try context.fetch(seasoningDataFetch) as! [SeasoningData]
@@ -94,6 +95,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             fatalError("Failed SeasoningData: \(error)")
         }
+    }
+    
+    func createSeasoningNutrients() -> SeasoningNutrients {
+        let context = persistentContainer.viewContext
+        let seasoningNutrients = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningNutrientsEntityName, into: context) as! SeasoningNutrients
+        return seasoningNutrients
     }
 
 }
