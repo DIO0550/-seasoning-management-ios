@@ -17,6 +17,8 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
     var dataSource: RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>?
     var viewModel: SMSeasoningDataListTableViewModel = SMSeasoningDataListTableViewModel()
     
+    var seasoningData: SeasoningData?;
+    
     @IBOutlet weak var dataListSeasoningTableView: UITableView! {
         didSet {
             let nib = UINib(nibName: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, bundle: nil)
@@ -60,15 +62,22 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         self.dataListSeasoningTableView.rx
             .modelSelected(SMSeasoningDataListTableViewCellModel.self)
             .subscribe(onNext: { [weak self] model in
-                self?.performSegue(withIdentifier: "SMSeasoningDataEditViewControllerIdentifier", sender: nil)
+                self?.seasoningData = model.seasoningData
+                self?.performSegue(withIdentifier: SMCommonConst.SMSeasoningDataEditViewControllerIdentifier, sender: nil)
         }).disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.viewModel.updateItems()
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if segue.identifier == SMCommonConst.SMSeasoningDataEditViewControllerIdentifier {
+            guard let seasoningData = self.seasoningData else {
+                return
+            }
+            let destVC = segue.destination as! SMSeasoningDataEditViewController
+            destVC.seasoningData = seasoningData;
+        }
     }
 }
