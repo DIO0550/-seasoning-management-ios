@@ -13,6 +13,7 @@
 		3A04E5FB246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04E5FA246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift */; };
 		3A166B88246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A166B87246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift */; };
 		3A166B8A246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A166B89246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift */; };
+		3A2E5588248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2E5587248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib */; };
 		3A483693247D540400B8FA68 /* SMSeasoningDataListTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A483692247D540400B8FA68 /* SMSeasoningDataListTableViewCellModel.swift */; };
 		3A483695247D560000B8FA68 /* SMSeasoningDataListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A483694247D560000B8FA68 /* SMSeasoningDataListTableViewCell.xib */; };
 		3A483697247D58E300B8FA68 /* SMSeasoningDataListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A483696247D58E300B8FA68 /* SMSeasoningDataListTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		3A04E5FA246C0FD4004651E5 /* SMUsingSeasoningCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMUsingSeasoningCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A166B87246FE089002C2E36 /* SMAddUsingSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAddUsingSeasoningViewController.swift; sourceTree = "<group>"; };
 		3A166B89246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDetailUsingSeasoningViewController.swift; sourceTree = "<group>"; };
+		3A2E5587248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSeasoningEditViewHeader.xib; sourceTree = "<group>"; };
 		3A483692247D540400B8FA68 /* SMSeasoningDataListTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListTableViewCellModel.swift; sourceTree = "<group>"; };
 		3A483694247D560000B8FA68 /* SMSeasoningDataListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSeasoningDataListTableViewCell.xib; sourceTree = "<group>"; };
 		3A483696247D58E300B8FA68 /* SMSeasoningDataListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListTableViewCell.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				3A483694247D560000B8FA68 /* SMSeasoningDataListTableViewCell.xib */,
+				3A2E5587248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib */,
 			);
 			path = nib;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				3A04E5F9246C0D08004651E5 /* SMUsingSeasoningCollectionViewCell.xib in Resources */,
 				3A9DC22E2466E2A0000A7AB3 /* LaunchScreen.storyboard in Resources */,
 				3A9DC22B2466E2A0000A7AB3 /* Image.xcassets in Resources */,
+				3A2E5588248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib in Resources */,
 				3A8E68282475678400033414 /* SMStockSeasoningTableViewCell.xib in Resources */,
 				3A9DC2262466E29F000A7AB3 /* Main.storyboard in Resources */,
 				3A483695247D560000B8FA68 /* SMSeasoningDataListTableViewCell.xib in Resources */,
