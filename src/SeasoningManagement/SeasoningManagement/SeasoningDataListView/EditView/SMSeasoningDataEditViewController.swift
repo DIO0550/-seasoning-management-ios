@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import RxDataSources
+import RxSwift
+import RxCocoa
 
 class SMSeasoningDataEditViewController: UITableViewController {
+    
+    /// disposeBag
+    let disposeBag = DisposeBag()
+    
+    let sectionTitles: [String] = ["基本情報", "価格", "栄養素"];
+    
+    /// テーブルビュー
+    @IBOutlet var seasoningDataEditTableView: UITableView!
     
     /// 名前
     @IBOutlet weak var nameLabel: UITextField!
@@ -82,5 +93,9 @@ class SMSeasoningDataEditViewController: UITableViewController {
         } else {
             self.carbohydrateLabel.text = String(0)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
     }
 }

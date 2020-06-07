@@ -450,6 +450,7 @@
                         <outlet property="nameLabel" destination="AYC-wS-tCm" id="FJ9-Jf-wNN"/>
                         <outlet property="priceLabel" destination="D6m-2d-tMw" id="GQc-ct-BNN"/>
                         <outlet property="proteinLabel" destination="g6B-QU-9F9" id="tfz-XN-HwV"/>
+                        <outlet property="seasoningDataEditTableView" destination="ogx-ml-sWb" id="TEf-Qe-LaQ"/>
                         <outlet property="sugarLabel" destination="lk2-g8-LY1" id="HBt-UY-QOA"/>
                         <outlet property="typeLabel" destination="Qil-0H-78V" id="hiA-94-6Xj"/>
                     </connections>
