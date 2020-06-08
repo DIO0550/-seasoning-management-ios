@@ -45,6 +45,8 @@ class SMSeasoningDataEditViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupSeaoningData()
+        self.tableView.register(UINib.init(nibName: "SMSeasoningEditViewHeader", bundle: nil),
+                                forHeaderFooterViewReuseIdentifier: "SMSeasoningEditViewHeaderIndentifier")
     }
     
     private func setupSeaoningData() {
@@ -96,6 +98,11 @@ class SMSeasoningDataEditViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SMSeasoningEditViewHeaderIndentifier") as? SMSeasoningDataEditTableViewHeader
+        headerView?.contentView.backgroundColor = UIColor.init(named: "SMSeasoningDataEditTableSectionHeaderColor")
+        headerView?.textLabel?.textColor = UIColor.white
+        return headerView
     }
+    
+    
 }

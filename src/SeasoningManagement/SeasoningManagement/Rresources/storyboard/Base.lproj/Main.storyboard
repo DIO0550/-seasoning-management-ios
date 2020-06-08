@@ -228,7 +228,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="28" id="ogx-ml-sWb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="SeasoningManagementColor"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                         <sections>
                             <tableViewSection id="Xu0-bq-5gf">
                                 <cells>
@@ -253,6 +254,7 @@
                                                 <constraint firstItem="fHl-hr-dSu" firstAttribute="top" secondItem="4xv-jJ-0B7" secondAttribute="topMargin" id="b5d-3B-anN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="SeasoningManagementColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -267,10 +269,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-wS-tCm">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="AYC-wS-tCm" firstAttribute="top" secondItem="VNi-C3-w9G" secondAttribute="top" id="3J1-Ij-Xpy"/>
                                                 <constraint firstAttribute="trailing" secondItem="AYC-wS-tCm" secondAttribute="trailing" id="ChS-Q5-Luf"/>
@@ -278,6 +283,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="AYC-wS-tCm" secondAttribute="bottom" id="axh-Dh-l13"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="SeasoningManagementColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="8xt-nP-2iB">
                                         <rect key="frame" x="0.0" y="334" width="414" height="50"/>
@@ -288,10 +294,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="種類（調味料・お菓子・etc...）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qil-0H-78V">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstItem="Qil-0H-78V" firstAttribute="leading" secondItem="bOE-Rd-K8o" secondAttribute="leading" id="TzW-dr-G4y"/>
                                                 <constraint firstAttribute="trailing" secondItem="Qil-0H-78V" secondAttribute="trailing" id="bZY-MG-Y86"/>
@@ -313,10 +322,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="価格" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D6m-2d-tMw">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstItem="D6m-2d-tMw" firstAttribute="top" secondItem="DPA-Je-vxm" secondAttribute="top" id="SGU-tu-Dsb"/>
                                                 <constraint firstAttribute="bottom" secondItem="D6m-2d-tMw" secondAttribute="bottom" id="qeR-us-5hv"/>
@@ -338,10 +350,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="カロリー" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-Ml-kQE">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstItem="XRN-Ml-kQE" firstAttribute="leading" secondItem="0Fj-VG-Xa0" secondAttribute="leading" id="ZEo-c3-vGc"/>
                                                 <constraint firstAttribute="bottom" secondItem="XRN-Ml-kQE" secondAttribute="bottom" id="bx1-wY-lnp"/>
@@ -359,10 +374,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タンパク質" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6B-QU-9F9">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstItem="g6B-QU-9F9" firstAttribute="top" secondItem="s4v-Zh-3O3" secondAttribute="top" id="ABu-6Y-uwz"/>
                                                 <constraint firstAttribute="trailing" secondItem="g6B-QU-9F9" secondAttribute="trailing" id="RRf-3h-vdg"/>
@@ -380,10 +398,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="脂質" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grz-Ru-gBp">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstItem="grz-Ru-gBp" firstAttribute="leading" secondItem="BDc-Ty-D7e" secondAttribute="leading" id="8tX-o5-1Pa"/>
                                                 <constraint firstItem="grz-Ru-gBp" firstAttribute="top" secondItem="BDc-Ty-D7e" secondAttribute="top" id="N8P-bi-Wq7"/>
@@ -401,10 +422,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="糖質" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-g8-LY1">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="lk2-g8-LY1" secondAttribute="bottom" id="MAT-Y9-2iu"/>
                                                 <constraint firstItem="lk2-g8-LY1" firstAttribute="top" secondItem="6ZL-RG-ZHa" secondAttribute="top" id="Z89-dZ-rNf"/>
@@ -422,10 +446,13 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="炭水化物" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-dX-IZJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" name="SeasoningManagementColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="PPc-dX-IZJ" secondAttribute="trailing" id="TeE-ED-uay"/>
                                                 <constraint firstAttribute="bottom" secondItem="PPc-dX-IZJ" secondAttribute="bottom" id="YTC-5x-Wvg"/>
