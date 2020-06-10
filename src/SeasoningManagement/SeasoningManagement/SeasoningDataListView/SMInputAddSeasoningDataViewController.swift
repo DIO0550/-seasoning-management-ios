@@ -46,10 +46,7 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         
         self.doneBarButton.rx.tap.asDriver().drive(onNext: { [weak self] in
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let seasoningData = appDelegate.createSeasoningData()
-            seasoningData.name = self?.nameLabel.text
-            seasoningData.type = self?.typeLabel.text
-            seasoningData.identifier = UUID();
+            self?.createSeasoningDataFromInputData()
             appDelegate.saveContext()
             self?.navigationController?.popViewController(animated: true)
         })
@@ -62,5 +59,67 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         headerView?.textLabel?.textColor = UIColor.white
         return headerView
     }
-
+    
+    private func createSeasoningDataFromInputData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let seasoningData = appDelegate.createSeasoningData()
+        seasoningData.identifier = UUID();
+        seasoningData.nutrients = appDelegate.createSeasoningNutrients()
+        
+        // 名前
+        if let name = self.nameLabel.text {
+            seasoningData.name = name
+        } else {
+            seasoningData.name = ""
+        }
+        
+        // 種類
+        if let type = self.typeLabel.text {
+            seasoningData.type = type
+        } else {
+            seasoningData.type = ""
+        }
+        
+        // 価格
+        if let price = self.priceLabel.text {
+            seasoningData.price = Int64(price) ?? 0
+        } else {
+            seasoningData.price = 0
+        }
+        
+        // カロリー
+        if let calorie = self.calorieLabel.text {
+            seasoningData.nutrients?.calorie = Int64(calorie) ?? 0
+        } else {
+            seasoningData.nutrients?.calorie = 0
+        }
+        
+        // タンパク質
+        if let protein = self.proteinLabel.text {
+            seasoningData.nutrients?.protein = Int64(protein) ?? 0
+        } else {
+            seasoningData.nutrients?.protein = 0
+        }
+        
+        // 脂質
+        if let lipid = self.lipidLabel.text {
+            seasoningData.nutrients?.lipid = Int64(lipid) ?? 0
+        } else {
+            seasoningData.nutrients?.lipid = 0
+        }
+        
+        // 糖質
+        if let sugar = self.sugarLabel.text {
+            seasoningData.nutrients?.sugar = Int64(sugar) ?? 0
+        } else {
+            seasoningData.nutrients?.sugar = 0
+        }
+        
+        // 炭水化物
+        if let carbohydrate = self.carbohydrateLabel.text {
+            seasoningData.nutrients?.carbohydrate = Int64(carbohydrate) ?? 0
+        } else {
+            seasoningData.nutrients?.carbohydrate = 0
+        }
+    }
 }
