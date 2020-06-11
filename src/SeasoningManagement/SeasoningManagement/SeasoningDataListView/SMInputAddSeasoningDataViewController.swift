@@ -123,3 +123,11 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         }
     }
 }
+
+extension SMInputAddSeasoningDataViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    private func presentImagePickerController() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+}
