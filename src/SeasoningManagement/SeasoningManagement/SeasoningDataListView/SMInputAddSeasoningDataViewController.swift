@@ -10,6 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 import RxDataSources
+import RxGesture
 
 class SMInputAddSeasoningDataViewController: UITableViewController {
     /// テーブルビュー
@@ -31,7 +32,8 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
     @IBOutlet weak var sugarLabel: UITextField!
     /// 炭水化物
     @IBOutlet weak var carbohydrateLabel: UITextField!
-    
+    /// イメージビュー
+    @IBOutlet weak var seasoningImageView: UIImageView!
     // Doneボタン
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
@@ -50,7 +52,12 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
             appDelegate.saveContext()
             self?.navigationController?.popViewController(animated: true)
         })
-        .disposed(by: disposeBag)
+        .disposed(by: self.disposeBag)
+        
+    self.seasoningImageView.rx.tapGesture().when(.recognized).subscribe(onNext: {[weak self] _ in
+            self?.presentImagePickerController()
+        })
+        .disposed(by: self.disposeBag)
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -10,6 +10,7 @@ def shared_pod
     pod 'RxSwift' , '~> 5'
     pod 'RxCocoa', '~> 5'
     pod 'RxDataSources', '~> 4'
+    pod 'RxGesture', '~> 3'
 end
 
 def test_shared_pod

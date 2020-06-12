@@ -817,6 +817,7 @@
                         <outlet property="priceLabel" destination="cyD-fD-vUu" id="r8y-Wr-K1q"/>
                         <outlet property="proteinLabel" destination="7YE-Nn-cHM" id="iFA-L8-fm3"/>
                         <outlet property="seasoningDataEditTableView" destination="9CF-V7-7Xa" id="zDK-u2-EUT"/>
+                        <outlet property="seasoningImageView" destination="TrK-7Q-I4q" id="nWR-Uz-rFd"/>
                         <outlet property="sugarLabel" destination="ZYf-ca-sy7" id="QLE-wC-dbm"/>
                         <outlet property="typeLabel" destination="B6H-0F-u5l" id="1fW-DE-pzz"/>
                     </connections>

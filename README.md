@@ -20,4 +20,5 @@ $ pod install
 |RxSwift|5.x|[MIT](https://github.com/ReactiveX/RxSwift/blob/master/LICENSE.md)|[URL](https://github.com/ReactiveX/RxSwift)|
 |RxCocoa|5.x|[MIT](https://github.com/ReactiveX/RxSwift/blob/master/LICENSE.md)|[URL](https://github.com/ReactiveX/RxSwift)|
 |RxDataSources|4.x|[MIT](https://github.com/RxSwiftCommunity/RxDataSources/blob/master/LICENSE.md)|[URL](https://github.com/RxSwiftCommunity/RxDataSources)|
+|RxGesture|3.x|[MIT](https://github.com/RxSwiftCommunity/RxGesture/blob/master/LICENSE)|[URL](https://github.com/RxSwiftCommunity/RxGesture)|
 |LicensePlist|最新|[MIT](https://github.com/mono0926/LicensePlist/blob/master/LICENSE)|[URL](https://github.com/mono0926/LicensePlist)|
