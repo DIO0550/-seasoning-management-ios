@@ -21,6 +21,8 @@ class SMSeasoningDataEditViewController: UITableViewController {
     /// テーブルビュー
     @IBOutlet var seasoningDataEditTableView: UITableView!
     
+    /// 画像
+    @IBOutlet weak var seasoningImageView: UIImageView!
     /// 名前
     @IBOutlet weak var nameLabel: UITextField!
     /// 種類
@@ -95,6 +97,12 @@ class SMSeasoningDataEditViewController: UITableViewController {
         } else {
             self.carbohydrateLabel.text = String(0)
         }
+        
+        guard let data = self.seasoningData?.image else {
+            return
+        }
+        
+        self.seasoningImageView.image = UIImage(data: data)
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

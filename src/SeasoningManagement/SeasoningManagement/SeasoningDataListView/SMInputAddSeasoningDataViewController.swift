@@ -73,6 +73,10 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         seasoningData.identifier = UUID();
         seasoningData.nutrients = appDelegate.createSeasoningNutrients()
         
+        if let imageData = self.seasoningImageView.image?.pngData() {
+            seasoningData.image = imageData;
+        }
+        
         // 名前
         if let name = self.nameLabel.text {
             seasoningData.name = name
@@ -136,5 +140,20 @@ extension SMInputAddSeasoningDataViewController: UIImagePickerControllerDelegate
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    // キャンセル時の処理
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // 画像選択時の処理
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            return
+        }
+        
+        self.seasoningImageView.image = selectImage
+        self.dismiss(animated: true, completion: nil)
     }
 }
