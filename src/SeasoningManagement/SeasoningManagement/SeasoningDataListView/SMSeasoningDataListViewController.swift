@@ -80,4 +80,12 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
             destVC.seasoningData = seasoningData;
         }
     }
+    
+    private func setupSeasoningDataListTableViewCell(cell: SMSeasoningDataListTableViewCell, sesoningData: SeasoningData) {
+        // 名前
+        cell.seasoningNameLabel.text = sesoningData.name
+        
+        //
+        cell.seasoningTypeLabel.t
+    }
 }

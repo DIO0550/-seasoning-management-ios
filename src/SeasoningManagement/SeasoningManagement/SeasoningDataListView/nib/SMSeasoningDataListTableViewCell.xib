@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,20 +34,20 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Mqi-Wv-Gqm" firstAttribute="leading" secondItem="ug7-uh-azm" secondAttribute="leading" constant="11" id="1gG-Mz-1lW"/>
-                <constraint firstItem="w7u-5k-W8K" firstAttribute="bottom" secondItem="6cm-2T-hql" secondAttribute="bottom" constant="11" id="5GT-HT-hvf"/>
+                <constraint firstAttribute="bottom" secondItem="6cm-2T-hql" secondAttribute="bottom" constant="11" id="5GT-HT-hvf"/>
                 <constraint firstItem="Mqi-Wv-Gqm" firstAttribute="centerY" secondItem="ug7-uh-azm" secondAttribute="centerY" id="A0d-te-qb0"/>
                 <constraint firstAttribute="trailing" secondItem="ce6-QO-z1v" secondAttribute="trailing" constant="20" id="A8e-gi-nhJ"/>
                 <constraint firstItem="ce6-QO-z1v" firstAttribute="top" secondItem="ug7-uh-azm" secondAttribute="top" constant="11" id="Omt-6S-LcI"/>
                 <constraint firstItem="6cm-2T-hql" firstAttribute="top" secondItem="ce6-QO-z1v" secondAttribute="bottom" constant="8" id="RGb-fC-akA"/>
-                <constraint firstItem="w7u-5k-W8K" firstAttribute="trailing" secondItem="6cm-2T-hql" secondAttribute="trailing" constant="20" id="UIN-59-Rvl"/>
+                <constraint firstAttribute="trailing" secondItem="6cm-2T-hql" secondAttribute="trailing" constant="20" id="UIN-59-Rvl"/>
                 <constraint firstItem="6cm-2T-hql" firstAttribute="leading" secondItem="Mqi-Wv-Gqm" secondAttribute="trailing" constant="8" id="V22-GT-Ugb"/>
                 <constraint firstItem="ce6-QO-z1v" firstAttribute="leading" secondItem="Mqi-Wv-Gqm" secondAttribute="trailing" constant="8" id="iIJ-zs-wzY"/>
                 <constraint firstItem="ce6-QO-z1v" firstAttribute="height" secondItem="Mqi-Wv-Gqm" secondAttribute="height" multiplier="0.5" id="tGB-SD-31o"/>
                 <constraint firstAttribute="bottom" secondItem="Mqi-Wv-Gqm" secondAttribute="bottom" constant="11" id="xrq-zi-q1S"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="w7u-5k-W8K"/>
             <connections>
+                <outlet property="seasoningImageView" destination="Mqi-Wv-Gqm" id="X5h-13-dvI"/>
                 <outlet property="seasoningNameLabel" destination="ce6-QO-z1v" id="tBm-6n-Qn5"/>
                 <outlet property="seasoningTypeLabel" destination="6cm-2T-hql" id="9Sd-95-FVr"/>
             </connections>
