@@ -42,6 +42,7 @@
 		3AA28D7A24790BF400DCACB8 /* SMSeasoningDataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA28D7924790BF400DCACB8 /* SMSeasoningDataListViewController.swift */; };
 		3AA28D7C24790E6C00DCACB8 /* SMInputAddSeasoningDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA28D7B24790E6C00DCACB8 /* SMInputAddSeasoningDataViewController.swift */; };
 		3AB4E67E2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E67D2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift */; };
+		3AC164AA2497946A00B389F6 /* UIImageEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC164A92497946A00B389F6 /* UIImageEx.swift */; };
 		3AD370AA248287D300DA7CCD /* SMSeasoningDataEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD370A9248287D300DA7CCD /* SMSeasoningDataEditViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		3AA28D7924790BF400DCACB8 /* SMSeasoningDataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListViewController.swift; sourceTree = "<group>"; };
 		3AA28D7B24790E6C00DCACB8 /* SMInputAddSeasoningDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMInputAddSeasoningDataViewController.swift; sourceTree = "<group>"; };
 		3AB4E67D2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMUsingSeasoningCollectionViewModel.swift; sourceTree = "<group>"; };
+		3AC164A92497946A00B389F6 /* UIImageEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageEx.swift; sourceTree = "<group>"; };
 		3AD370A9248287D300DA7CCD /* SMSeasoningDataEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataEditViewController.swift; sourceTree = "<group>"; };
 		8DE0CEDFF81FA65B795A7C0A /* Pods-SeasoningManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagement.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagement/Pods-SeasoningManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		CF187730ECA040F96406FA8A /* Pods_SeasoningManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		3A65B0352469852100267FFC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3AC164A92497946A00B389F6 /* UIImageEx.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				3A9DC2212466E29F000A7AB3 /* SMUsingSeasoningViewController.swift in Sources */,
 				3AA28D7C24790E6C00DCACB8 /* SMInputAddSeasoningDataViewController.swift in Sources */,
 				3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */,
+				3AC164AA2497946A00B389F6 /* UIImageEx.swift in Sources */,
 				3A8E682C24756BE200033414 /* SMStockSeasoningTableViewModel.swift in Sources */,
 				3A4AF5A3248CD28D00256AF6 /* SMSeasoningDataEditTableViewHeader.swift in Sources */,
 				3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */,

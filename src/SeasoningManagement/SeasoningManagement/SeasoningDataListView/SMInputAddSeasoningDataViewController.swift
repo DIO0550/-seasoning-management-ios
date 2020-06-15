@@ -73,9 +73,11 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         seasoningData.identifier = UUID();
         seasoningData.nutrients = appDelegate.createSeasoningNutrients()
         
-        if let imageData = self.seasoningImageView.image?.pngData() {
-            let image2 = UIImage(data: imageData)
-            seasoningData.image = imageData;
+        if let fixedImage = self.seasoningImageView.image?.fixedFlipImage() {
+            if let imageData = fixedImage.pngData() {
+                let image2 = UIImage(data: imageData)
+                seasoningData.image = imageData;
+            }
         }
         
         // 名前
