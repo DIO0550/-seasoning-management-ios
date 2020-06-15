@@ -12,6 +12,7 @@ class SMSeasoningDataListTableViewCell: UITableViewCell {
     @IBOutlet weak var seasoningNameLabel: UILabel!
     @IBOutlet weak var seasoningTypeLabel: UILabel!
     @IBOutlet weak var seasoningImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

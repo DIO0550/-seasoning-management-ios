@@ -74,6 +74,7 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         seasoningData.nutrients = appDelegate.createSeasoningNutrients()
         
         if let imageData = self.seasoningImageView.image?.pngData() {
+            let image2 = UIImage(data: imageData)
             seasoningData.image = imageData;
         }
         

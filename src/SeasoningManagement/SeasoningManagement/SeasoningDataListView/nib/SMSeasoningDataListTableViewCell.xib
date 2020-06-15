@@ -12,11 +12,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-Wv-Gqm">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-Wv-Gqm">
                     <rect key="frame" x="11" y="11" width="128" height="128"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="128" id="5yP-gc-44I"/>
+                        <constraint firstAttribute="width" constant="128" id="BHT-4R-z59"/>
                         <constraint firstAttribute="width" secondItem="Mqi-Wv-Gqm" secondAttribute="height" multiplier="1:1" id="MO8-oa-yYh"/>
                     </constraints>
+                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="調味料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-QO-z1v">
                     <rect key="frame" x="147" y="11" width="247" height="64"/>
@@ -34,6 +37,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Mqi-Wv-Gqm" firstAttribute="leading" secondItem="ug7-uh-azm" secondAttribute="leading" constant="11" id="1gG-Mz-1lW"/>
+                <constraint firstItem="Mqi-Wv-Gqm" firstAttribute="top" secondItem="ug7-uh-azm" secondAttribute="top" constant="11" id="1pa-1w-OTf"/>
                 <constraint firstAttribute="bottom" secondItem="6cm-2T-hql" secondAttribute="bottom" constant="11" id="5GT-HT-hvf"/>
                 <constraint firstItem="Mqi-Wv-Gqm" firstAttribute="centerY" secondItem="ug7-uh-azm" secondAttribute="centerY" id="A0d-te-qb0"/>
                 <constraint firstAttribute="trailing" secondItem="ce6-QO-z1v" secondAttribute="trailing" constant="20" id="A8e-gi-nhJ"/>
@@ -43,6 +47,7 @@
                 <constraint firstItem="6cm-2T-hql" firstAttribute="leading" secondItem="Mqi-Wv-Gqm" secondAttribute="trailing" constant="8" id="V22-GT-Ugb"/>
                 <constraint firstItem="ce6-QO-z1v" firstAttribute="leading" secondItem="Mqi-Wv-Gqm" secondAttribute="trailing" constant="8" id="iIJ-zs-wzY"/>
                 <constraint firstItem="ce6-QO-z1v" firstAttribute="height" secondItem="Mqi-Wv-Gqm" secondAttribute="height" multiplier="0.5" id="tGB-SD-31o"/>
+                <constraint firstAttribute="bottom" secondItem="Mqi-Wv-Gqm" secondAttribute="bottom" constant="11" id="v3m-Ur-pn7"/>
                 <constraint firstAttribute="bottom" secondItem="Mqi-Wv-Gqm" secondAttribute="bottom" constant="11" id="xrq-zi-q1S"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

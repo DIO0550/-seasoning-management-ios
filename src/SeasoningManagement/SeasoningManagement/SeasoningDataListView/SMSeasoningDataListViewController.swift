@@ -42,7 +42,7 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
             configureCell: { dataSource, tableView, indexPath, item in
                 let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
                 let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
-                seasoningDataListTableViewCell.seasoningNameLabel.text = model.seasoningData.name
+                self.setupSeasoningDataListTableViewCell(cell: seasoningDataListTableViewCell, seasoningData: model.seasoningData)
                 return seasoningDataListTableViewCell
             },
             titleForHeaderInSection: { dataSource, index in
@@ -81,11 +81,21 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         }
     }
     
-    private func setupSeasoningDataListTableViewCell(cell: SMSeasoningDataListTableViewCell, sesoningData: SeasoningData) {
-        // 名前
-        cell.seasoningNameLabel.text = sesoningData.name
+    private func setupSeasoningDataListTableViewCell(cell: SMSeasoningDataListTableViewCell, seasoningData: SeasoningData) {
         
-        //
-        cell.seasoningTypeLabel.t
+        cell.imageView?.contentMode = .scaleAspectFit
+        // 画像
+        if let imageData = seasoningData.image {
+            let image = UIImage(data: imageData)
+            if image?.imageOrientation == .up {
+                cell.seasoningImageView.image = UIImage(data: imageData)
+            }
+        }
+        
+        // 名前
+        cell.seasoningNameLabel.text = seasoningData.name
+        
+        // 種類
+        cell.seasoningTypeLabel.text = seasoningData.type
     }
 }
