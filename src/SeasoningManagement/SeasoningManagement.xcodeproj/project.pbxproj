@@ -28,6 +28,7 @@
 		3A8E682E24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */; };
 		3A8E683024756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */; };
 		3A8E9B7124924D2900732C86 /* SMImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E9B7024924D2900732C86 /* SMImageManager.swift */; };
+		3A9291F72498EFCE003F5869 /* SMAssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9291F62498EFCE003F5869 /* SMAssetsColor.swift */; };
 		3A9D4CA5247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */; };
 		3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */; };
 		3A9DC21F2466E29F000A7AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21E2466E29F000A7AB3 /* SceneDelegate.swift */; };
@@ -35,7 +36,7 @@
 		3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */; };
 		3A9DC2262466E29F000A7AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC2242466E29F000A7AB3 /* Main.storyboard */; };
 		3A9DC2292466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2272466E29F000A7AB3 /* SeasoningManagement.xcdatamodeld */; };
-		3A9DC22B2466E2A0000A7AB3 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22A2466E2A0000A7AB3 /* Image.xcassets */; };
+		3A9DC22B2466E2A0000A7AB3 /* AssetsCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22A2466E2A0000A7AB3 /* AssetsCatalog.xcassets */; };
 		3A9DC22E2466E2A0000A7AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC22C2466E2A0000A7AB3 /* LaunchScreen.storyboard */; };
 		3A9DC2392466E2A1000A7AB3 /* SeasoningManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC2382466E2A1000A7AB3 /* SeasoningManagementTests.swift */; };
 		3AA055E32476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA055E22476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift */; };
@@ -78,6 +79,7 @@
 		3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellModel.swift; sourceTree = "<group>"; };
 		3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellSectionOfModel.swift; sourceTree = "<group>"; };
 		3A8E9B7024924D2900732C86 /* SMImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMImageManager.swift; sourceTree = "<group>"; };
+		3A9291F62498EFCE003F5869 /* SMAssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAssetsColor.swift; sourceTree = "<group>"; };
 		3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListTableViewModel.swift; sourceTree = "<group>"; };
 		3A9DC2192466E29F000A7AB3 /* SeasoningManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasoningManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningViewController.swift; sourceTree = "<group>"; };
 		3A9DC2252466E29F000A7AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9DC2282466E29F000A7AB3 /* SeasoningManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeasoningManagement.xcdatamodel; sourceTree = "<group>"; };
-		3A9DC22A2466E2A0000A7AB3 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		3A9DC22A2466E2A0000A7AB3 /* AssetsCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsCatalog.xcassets; sourceTree = "<group>"; };
 		3A9DC22D2466E2A0000A7AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9DC22F2466E2A0000A7AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9DC2342466E2A1000A7AB3 /* SeasoningManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasoningManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 			children = (
 				3A65B0332469842800267FFC /* SMCommonConst.swift */,
 				3A8E9B7024924D2900732C86 /* SMImageManager.swift */,
+				3A9291F62498EFCE003F5869 /* SMAssetsColor.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 		3A828D9C2467C64900A05F01 /* Rresources */ = {
 			isa = PBXGroup;
 			children = (
-				3A9DC22A2466E2A0000A7AB3 /* Image.xcassets */,
+				3A9DC22A2466E2A0000A7AB3 /* AssetsCatalog.xcassets */,
 				3A828D9D2467C68A00A05F01 /* storyboard */,
 			);
 			path = Rresources;
@@ -448,7 +451,7 @@
 			files = (
 				3A04E5F9246C0D08004651E5 /* SMUsingSeasoningCollectionViewCell.xib in Resources */,
 				3A9DC22E2466E2A0000A7AB3 /* LaunchScreen.storyboard in Resources */,
-				3A9DC22B2466E2A0000A7AB3 /* Image.xcassets in Resources */,
+				3A9DC22B2466E2A0000A7AB3 /* AssetsCatalog.xcassets in Resources */,
 				3A2E5588248BC11200EABCC8 /* SMSeasoningEditViewHeader.xib in Resources */,
 				3A8E68282475678400033414 /* SMStockSeasoningTableViewCell.xib in Resources */,
 				3A9DC2262466E29F000A7AB3 /* Main.storyboard in Resources */,
@@ -569,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9291F72498EFCE003F5869 /* SMAssetsColor.swift in Sources */,
 				3AA28D7A24790BF400DCACB8 /* SMSeasoningDataListViewController.swift in Sources */,
 				3A166B8A246FE368002C2E36 /* SMDetailUsingSeasoningViewController.swift in Sources */,
 				3A8E682E24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift in Sources */,
