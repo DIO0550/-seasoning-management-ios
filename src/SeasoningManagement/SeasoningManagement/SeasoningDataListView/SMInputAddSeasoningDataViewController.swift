@@ -15,7 +15,6 @@ import RxGesture
 class SMInputAddSeasoningDataViewController: UITableViewController {
     /// テーブルビュー
     @IBOutlet var seasoningDataEditTableView: UITableView!
-    
     /// 名前
     @IBOutlet weak var nameLabel: UITextField!
     /// 種類
@@ -37,7 +36,8 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
     // Doneボタン
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
-    
+    // 定数
+    // disposeBag
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -60,13 +60,6 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         .disposed(by: self.disposeBag)
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SMSeasoningEditViewHeaderIndentifier") as? SMSeasoningDataEditTableViewHeader
-        headerView?.contentView.backgroundColor = UIColor.init(named: "SMSeasoningDataEditTableSectionHeaderColor")
-        headerView?.textLabel?.textColor = UIColor.white
-        return headerView
-    }
-    
     private func createSeasoningDataFromInputData() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let seasoningData = appDelegate.createSeasoningData()
@@ -75,7 +68,6 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         
         if let fixedImage = self.seasoningImageView.image?.fixedFlipImage() {
             if let imageData = fixedImage.pngData() {
-                let image2 = UIImage(data: imageData)
                 seasoningData.image = imageData;
             }
         }
@@ -135,6 +127,15 @@ class SMInputAddSeasoningDataViewController: UITableViewController {
         } else {
             seasoningData.nutrients?.carbohydrate = 0
         }
+    }
+}
+
+extension SMInputAddSeasoningDataViewController {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SMSeasoningEditViewHeaderIndentifier") as? SMSeasoningDataEditTableViewHeader
+        headerView?.contentView.backgroundColor = UIColor.init(named: "SMSeasoningDataEditTableSectionHeaderColor")
+        headerView?.textLabel?.textColor = UIColor.white
+        return headerView
     }
 }
 

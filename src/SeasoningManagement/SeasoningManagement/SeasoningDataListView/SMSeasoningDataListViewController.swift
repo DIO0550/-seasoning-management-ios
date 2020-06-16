@@ -11,13 +11,19 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
+class SMSeasoningDataListViewController: UIViewController {
     @IBOutlet weak var addDataBarButton: UIBarButtonItem!
     
+    // データソース
     var dataSource: RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>?
+    // ビューモデル
     var viewModel: SMSeasoningDataListTableViewModel = SMSeasoningDataListTableViewModel()
-    
+    // 調味料データ
     var seasoningData: SeasoningData?;
+    
+    // 定数
+    // テーブルビューの高さ
+    static let SeasoningDataListTableViewRowHegiht: CGFloat = 150.0
     
     @IBOutlet weak var dataListSeasoningTableView: UITableView! {
         didSet {
@@ -97,5 +103,15 @@ class SMSeasoningDataListViewController: UIViewController, UITableViewDelegate {
         
         // 種類
         cell.seasoningTypeLabel.text = seasoningData.type
+    }
+}
+
+extension SMSeasoningDataListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return SMSeasoningDataListViewController.SeasoningDataListTableViewRowHegiht
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // TODO: 色を変えたりする処理
     }
 }
