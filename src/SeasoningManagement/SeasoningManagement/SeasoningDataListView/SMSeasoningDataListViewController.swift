@@ -112,6 +112,10 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        // TODO: 色を変えたりする処理
+        cell.backgroundColor = SMAssetsColor.seasoningManagementColor
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = SMAssetsColor.seasoningDataEditTableSectionHeaderColor
     }
 }

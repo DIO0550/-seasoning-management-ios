@@ -437,9 +437,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-kh-jRv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-kh-jRv">
                                 <rect key="frame" x="0.0" y="178" width="414" height="635"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" name="SMSeasoningManagementColor"/>
+                                <color key="separatorColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" name="SMSeasoningDataEditTableSectionHeaderColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" name="SeasoningManagementColor"/>
@@ -833,6 +835,12 @@
         <image name="first" width="30" height="30"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
+        <namedColor name="SMSeasoningDataEditTableSectionHeaderColor">
+            <color red="0.057999998331069946" green="0.38499999046325684" blue="0.15600000321865082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SMSeasoningManagementColor">
+            <color red="0.14900000393390656" green="0.57300001382827759" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="SeasoningManagementColor">
             <color red="0.14900000393390656" green="0.57300001382827759" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

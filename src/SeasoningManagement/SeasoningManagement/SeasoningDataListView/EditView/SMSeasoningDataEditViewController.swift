@@ -107,7 +107,7 @@ class SMSeasoningDataEditViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SMSeasoningEditViewHeaderIndentifier") as? SMSeasoningDataEditTableViewHeader
-        headerView?.contentView.backgroundColor = UIColor.init(named: "SMSeasoningDataEditTableSectionHeaderColor")
+        headerView?.contentView.backgroundColor = SMAssetsColor.seasoningDataEditTableSectionHeaderColor
         headerView?.textLabel?.textColor = UIColor.white
         return headerView
     }
