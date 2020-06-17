@@ -24,6 +24,8 @@ class SMSeasoningDataListViewController: UIViewController {
     // 定数
     // テーブルビューの高さ
     static let SeasoningDataListTableViewRowHegiht: CGFloat = 150.0
+    // テーブルビューのヘッダの高さ
+    static let SeasoningDataListTableViewHeaderHegiht: CGFloat = 90.0
     
     @IBOutlet weak var dataListSeasoningTableView: UITableView! {
         didSet {
@@ -117,5 +119,9 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.backgroundColor = SMAssetsColor.seasoningDataEditTableSectionHeaderColor
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return SMSeasoningDataListViewController.SeasoningDataListTableViewHeaderHegiht
     }
 }
