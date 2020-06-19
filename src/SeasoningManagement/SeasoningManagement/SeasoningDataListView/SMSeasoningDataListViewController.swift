@@ -25,7 +25,7 @@ class SMSeasoningDataListViewController: UIViewController {
     // テーブルビューの高さ
     static let SeasoningDataListTableViewRowHegiht: CGFloat = 150.0
     // テーブルビューのヘッダの高さ
-    static let SeasoningDataListTableViewHeaderHegiht: CGFloat = 90.0
+    static let SeasoningDataListTableViewHeaderHegiht: CGFloat = 45.0
     
     @IBOutlet weak var dataListSeasoningTableView: UITableView! {
         didSet {
@@ -39,6 +39,8 @@ class SMSeasoningDataListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.dataListSeasoningTableView.register(UINib.init(nibName: "SMSeasoningDataListHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "SMSeasoningDataListHeaderViewIdentifier")
 
         self.addDataBarButton.rx.tap.asDriver().drive(onNext: { [weak self] in
             self?.performSegue(withIdentifier: "SMInputAddSeasoningDataViewControllerShowIdentifier",
@@ -123,5 +125,13 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return SMSeasoningDataListViewController.SeasoningDataListTableViewHeaderHegiht
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SMSeasoningDataListHeaderViewIdentifier") as? SMSeasoningDataListHeaderView
+        headerView?.contentView.backgroundColor = SMAssetsColor.seasoningDataEditTableSectionHeaderColor
+        headerView?.textLabel?.textColor = UIColor.white
+        headerView?.contentView.layer.borderWidth = 2.0
+        return headerView
     }
 }
