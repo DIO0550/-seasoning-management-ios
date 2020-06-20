@@ -39,6 +39,7 @@ class SMSeasoningDataListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dataListSeasoningTableView.allowsMultipleSelectionDuringEditing = true
         
         self.dataListSeasoningTableView.register(UINib.init(nibName: "SMSeasoningDataListHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "SMSeasoningDataListHeaderViewIdentifier")
 
@@ -65,6 +66,10 @@ class SMSeasoningDataListViewController: UIViewController {
         
         self.dataListSeasoningTableView.rx.setDelegate(self).disposed(by: self.disposeBag)
         
+        self.dataSource?.canEditRowAtIndexPath = { dataSource, indexPath  in
+            return true
+        }
+        
         self.viewModel.sectionsObservable()
             .bind(to: self.dataListSeasoningTableView.rx.items(dataSource: self.dataSource!))
             .disposed(by: disposeBag)
@@ -75,6 +80,12 @@ class SMSeasoningDataListViewController: UIViewController {
                 self?.seasoningData = model.seasoningData
                 self?.performSegue(withIdentifier: SMCommonConst.SMSeasoningDataEditViewControllerIdentifier, sender: nil)
         }).disposed(by: disposeBag)
+        
+        self.dataListSeasoningTableView.rx.itemDeleted.subscribe({_ in
+            print("a")
+        })
+        .disposed(by: disposeBag)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -118,11 +129,11 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = SMAssetsColor.seasoningManagementColor
     }
-    
+
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.backgroundColor = SMAssetsColor.seasoningDataEditTableSectionHeaderColor
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return SMSeasoningDataListViewController.SeasoningDataListTableViewHeaderHegiht
     }
@@ -133,5 +144,22 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
         headerView?.textLabel?.textColor = UIColor.white
         headerView?.contentView.layer.borderWidth = 2.0
         return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        
+        let deleteAction = UIContextualAction(style: .destructive,
+                                              title:  "削除",
+                                              handler: { (action: UIContextualAction, view: UIView, completion :(Bool) -> Void) in
+                                                completion(true)
+        })
+        deleteAction.image = UIImage.init(systemName: "trash")
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 }
