@@ -42,4 +42,11 @@ class SMSeasoningDataListTableViewModel {
             self.items.accept(value)
         }
     }
+    
+    func remove(indexPath: IndexPath) {
+        var sections = self.items.value[indexPath.section]
+        var item = sections.items[indexPath.row]
+        sections.items.remove(at: indexPath.row)
+        self.items.accept(self.items.value)
+    }
 }
