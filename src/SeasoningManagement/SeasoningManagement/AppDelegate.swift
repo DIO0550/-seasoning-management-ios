@@ -85,6 +85,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return seasoningData
     }
     
+    func deleteSeasoningData(seasoningData: SeasoningData) {
+        let context = persistentContainer.viewContext
+        context.delete(seasoningData)
+        do {
+            try context.save()
+        } catch {
+            fatalError("Failed Delete SeasoningData: \(error)")
+        }
+    }
+    
     func fetchAllSeasonignData() -> [SeasoningData] {
         let context = persistentContainer.viewContext
         let seasoningDataFetch = NSFetchRequest<NSFetchRequestResult>(entityName: SMCommonConst.SeasoningDataEntityName)
