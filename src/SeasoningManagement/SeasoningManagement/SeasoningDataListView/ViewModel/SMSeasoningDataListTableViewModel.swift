@@ -45,8 +45,13 @@ class SMSeasoningDataListTableViewModel {
     
     func remove(indexPath: IndexPath) {
         var sections = self.items.value[indexPath.section]
-        var item = sections.items[indexPath.row]
+        let item = sections.items[indexPath.row]
         sections.items.remove(at: indexPath.row)
+        if sections.items.count == 0 {
+            
+        }
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.deleteSeasoningData(seasoningData: item.seasoningData)
         self.items.accept(self.items.value)
     }
 }

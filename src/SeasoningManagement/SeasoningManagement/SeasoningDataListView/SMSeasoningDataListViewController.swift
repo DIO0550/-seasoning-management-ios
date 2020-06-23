@@ -157,6 +157,7 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
                                               title:  "削除",
                                               handler: { (action: UIContextualAction, view: UIView, completion :(Bool) -> Void) in
                                                 completion(true)
+                                                tableView.deleteRows(at: [indexPath], with: .left)
                                                 self.viewModel.remove(indexPath: indexPath)
         })
         deleteAction.image = UIImage.init(systemName: "trash")
