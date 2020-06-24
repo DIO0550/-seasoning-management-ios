@@ -19,7 +19,7 @@ class SMSeasoningDataListTableViewModel {
         self.updateItems()
     }
     
-    private let items = BehaviorRelay<[Section]>(value: [])
+    private var items = BehaviorRelay<[Section]>(value: [])
     
     func sectionsObservable() -> Observable<[Section]> {
         return self.items.asObservable()
@@ -44,14 +44,19 @@ class SMSeasoningDataListTableViewModel {
     }
     
     func remove(indexPath: IndexPath) {
-        var sections = self.items.value[indexPath.section]
+        var value = self.items.value
+        var sections = value[indexPath.section]
         let item = sections.items[indexPath.row]
         sections.items.remove(at: indexPath.row)
+        
         if sections.items.count == 0 {
-            
+            value.remove(at: indexPath.section)
         }
+        self.items.accept(value)
+        
+        // テーブルビューから削除してから、coredataを削除する
+        // CoreDataを削除すると、Modelの調味料データが「data: <fault>」になるため。
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.deleteSeasoningData(seasoningData: item.seasoningData)
-        self.items.accept(self.items.value)
     }
 }

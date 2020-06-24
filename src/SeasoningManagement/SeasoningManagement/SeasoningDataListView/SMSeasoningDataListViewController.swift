@@ -49,26 +49,9 @@ class SMSeasoningDataListViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        let dataSource = RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>(
-            configureCell: { dataSource, tableView, indexPath, item in
-                let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
-                let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
-                self.setupSeasoningDataListTableViewCell(cell: seasoningDataListTableViewCell, seasoningData: model.seasoningData)
-                return seasoningDataListTableViewCell
-            },
-            titleForHeaderInSection: { dataSource, index in
-                return dataSource[index].header
-            }
-        )
-        
-        
-        self.dataSource = dataSource
+        self.setupDataSource()
         
         self.dataListSeasoningTableView.rx.setDelegate(self).disposed(by: self.disposeBag)
-        
-        self.dataSource?.canEditRowAtIndexPath = { dataSource, indexPath  in
-            return true
-        }
         
         self.viewModel.sectionsObservable()
             .bind(to: self.dataListSeasoningTableView.rx.items(dataSource: self.dataSource!))
@@ -80,12 +63,6 @@ class SMSeasoningDataListViewController: UIViewController {
                 self?.seasoningData = model.seasoningData
                 self?.performSegue(withIdentifier: SMCommonConst.SMSeasoningDataEditViewControllerIdentifier, sender: nil)
         }).disposed(by: disposeBag)
-        
-        self.dataListSeasoningTableView.rx.itemDeleted.subscribe({_ in
-            print("a")
-        })
-        .disposed(by: disposeBag)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -118,6 +95,27 @@ class SMSeasoningDataListViewController: UIViewController {
         
         // 種類
         cell.seasoningTypeLabel.text = seasoningData.type
+    }
+    
+    private func setupDataSource() {
+        let dataSource = RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .middle, reloadAnimation: .top, deleteAnimation: .fade),
+            configureCell: { dataSource, tableView, indexPath, item in
+                let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
+                let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
+                self.setupSeasoningDataListTableViewCell(cell: seasoningDataListTableViewCell, seasoningData: model.seasoningData)
+                return seasoningDataListTableViewCell
+            },
+            titleForHeaderInSection: { dataSource, index in
+                return dataSource[index].header
+            }
+        )
+        
+        self.dataSource = dataSource
+        
+        self.dataSource?.canEditRowAtIndexPath = { dataSource, indexPath  in
+            return true
+        }
     }
 }
 
@@ -153,13 +151,10 @@ extension SMSeasoningDataListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         
-        let deleteAction = UIContextualAction(style: .destructive,
-                                              title:  "削除",
-                                              handler: { (action: UIContextualAction, view: UIView, completion :(Bool) -> Void) in
+        let deleteAction = UIContextualAction(style: .destructive, title:  "削除") { [weak self] (action: UIContextualAction, view: UIView, completion :(Bool) -> Void) in
+                                                self?.viewModel.remove(indexPath: indexPath)
                                                 completion(true)
-                                                tableView.deleteRows(at: [indexPath], with: .left)
-                                                self.viewModel.remove(indexPath: indexPath)
-        })
+        }
         deleteAction.image = UIImage.init(systemName: "trash")
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
