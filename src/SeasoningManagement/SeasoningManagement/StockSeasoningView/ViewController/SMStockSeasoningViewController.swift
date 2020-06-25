@@ -17,6 +17,9 @@ class SMStockSeasoningViewController: UIViewController, UITableViewDelegate {
     var dataSource: RxTableViewSectionedAnimatedDataSource<SMStockSeasoningTableViewCellSectionOfModel>?
     var viewModel: SMStockSeasoningTableViewModel = SMStockSeasoningTableViewModel()
     
+    @IBOutlet weak var addStockSeasoningData: UIBarButtonItem!
+    
+    
     @IBOutlet weak var stockSeasoningTableView: UITableView! {
         didSet {
             let nib = UINib(nibName: SMCommonConst.SMStockSeasoningTableViewCellIdentifier, bundle: nil)
@@ -47,6 +50,12 @@ class SMStockSeasoningViewController: UIViewController, UITableViewDelegate {
         self.viewModel.sectionsObservable()
             .bind(to: self.stockSeasoningTableView.rx.items(dataSource: self.dataSource!))
             .disposed(by: disposeBag)
+        
+        self.addStockSeasoningData.rx.tap.asDriver().drive(onNext: { [weak self] in
+        self?.performSegue(withIdentifier: "SMSelectAddStockSeasoningViewControllerIdentifier",
+                           sender: nil)
+        })
+        .disposed(by: disposeBag)
         
     }
 }

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RxSwift
 
-class SMAddStockSeasoningViewController: UIViewController {
-
-
+class SMSelectAddStockSeasoningViewController: UIViewController {
+    let disposeBag = DisposeBag()
+    
+    
 }
