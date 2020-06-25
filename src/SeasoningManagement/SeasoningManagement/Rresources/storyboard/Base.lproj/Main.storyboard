@@ -131,8 +131,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHl-hr-dSu">
-                                                    <rect key="frame" x="118" y="11" width="178" height="178"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fHl-hr-dSu">
+                                                    <rect key="frame" x="118" y="12" width="178" height="175.5"/>
+                                                    <color key="tintColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="fHl-hr-dSu" secondAttribute="height" multiplier="1:1" id="dhk-d0-N8p"/>
                                                     </constraints>
@@ -404,7 +405,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-pM-bmY">
-                                <rect key="frame" x="0.0" y="178" width="414" height="635"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -412,14 +413,16 @@
                         <constraints>
                             <constraint firstItem="L9c-pM-bmY" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="PQr-iV-exL"/>
                             <constraint firstItem="L9c-pM-bmY" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="dXU-Mt-H2u"/>
-                            <constraint firstItem="L9c-pM-bmY" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="90" id="e9Q-vI-Lu4"/>
+                            <constraint firstItem="L9c-pM-bmY" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="e9Q-vI-Lu4"/>
                             <constraint firstItem="L9c-pM-bmY" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="qr8-w9-GLg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="在庫" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ZUF-Bs-tzM"/>
+                    <navigationItem key="navigationItem" id="ZUF-Bs-tzM">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="XR3-uO-7WR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="stockSeasoningTableView" destination="L9c-pM-bmY" id="chp-iq-cnc"/>
                         <segue destination="7Ex-R4-64a" kind="show" id="bGv-cb-GeX"/>
@@ -579,8 +582,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TrK-7Q-I4q">
-                                                    <rect key="frame" x="118" y="11" width="178" height="178"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.app" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TrK-7Q-I4q">
+                                                    <rect key="frame" x="118" y="12" width="178" height="175.5"/>
+                                                    <color key="tintColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="TrK-7Q-I4q" secondAttribute="height" multiplier="1:1" id="aYz-By-1oX"/>
                                                     </constraints>
@@ -834,6 +838,8 @@
         <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="first" width="30" height="30"/>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="plus.app" catalog="system" width="64" height="56"/>
+        <image name="plus.square" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
         <namedColor name="SMSeasoningDataEditTableSectionHeaderColor">
             <color red="0.057999998331069946" green="0.38499999046325684" blue="0.15600000321865082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

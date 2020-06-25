@@ -47,11 +47,13 @@ class SMSeasoningDataListTableViewModel {
         var value = self.items.value
         var sections = value[indexPath.section]
         let item = sections.items[indexPath.row]
-        sections.items.remove(at: indexPath.row)
         
-        if sections.items.count == 0 {
+        if sections.items.count == 1 {
             value.remove(at: indexPath.section)
+        } else {
+            sections.items.remove(at: indexPath.row)
         }
+        
         self.items.accept(value)
         
         // テーブルビューから削除してから、coredataを削除する

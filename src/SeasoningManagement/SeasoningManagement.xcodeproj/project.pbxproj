@@ -30,6 +30,7 @@
 		3A8E682E24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */; };
 		3A8E683024756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */; };
 		3A8E9B7124924D2900732C86 /* SMImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E9B7024924D2900732C86 /* SMImageManager.swift */; };
+		3A90794B24A4BFF400CA29F8 /* SMAddStockSeasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90794A24A4BFF400CA29F8 /* SMAddStockSeasoningViewController.swift */; };
 		3A9291F72498EFCE003F5869 /* SMAssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9291F62498EFCE003F5869 /* SMAssetsColor.swift */; };
 		3A9D4CA5247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */; };
 		3A9DC21D2466E29F000A7AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC21C2466E29F000A7AB3 /* AppDelegate.swift */; };
@@ -83,6 +84,7 @@
 		3A8E682D24756C6000033414 /* SMStockSeasoningTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellModel.swift; sourceTree = "<group>"; };
 		3A8E682F24756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMStockSeasoningTableViewCellSectionOfModel.swift; sourceTree = "<group>"; };
 		3A8E9B7024924D2900732C86 /* SMImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMImageManager.swift; sourceTree = "<group>"; };
+		3A90794A24A4BFF400CA29F8 /* SMAddStockSeasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAddStockSeasoningViewController.swift; sourceTree = "<group>"; };
 		3A9291F62498EFCE003F5869 /* SMAssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAssetsColor.swift; sourceTree = "<group>"; };
 		3A9D4CA4247E9BF200BBEE08 /* SMSeasoningDataListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningDataListTableViewModel.swift; sourceTree = "<group>"; };
 		3A9DC2192466E29F000A7AB3 /* SeasoningManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasoningManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,10 +185,10 @@
 		3A828D9A2467C55F00A05F01 /* StockSeasoningView */ = {
 			isa = PBXGroup;
 			children = (
-				3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */,
-				3AA055E22476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift */,
+				3A90794824A4BEEF00CA29F8 /* ViewController */,
 				3A8E682A24756B8900033414 /* ViewModel */,
 				3A8E682924756B6900033414 /* Model */,
+				3A90794924A4BF0400CA29F8 /* TableViewCell */,
 				3A8E6826247566F700033414 /* nib */,
 			);
 			path = StockSeasoningView;
@@ -257,6 +259,23 @@
 				3A8E682B24756BE200033414 /* SMStockSeasoningTableViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A90794824A4BEEF00CA29F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DC2222466E29F000A7AB3 /* SMStockSeasoningViewController.swift */,
+				3A90794A24A4BFF400CA29F8 /* SMAddStockSeasoningViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3A90794924A4BF0400CA29F8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3AA055E22476B3F400CB6958 /* SMStockSeaoningTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		3A9DC2102466E29F000A7AB3 = {
@@ -598,6 +617,7 @@
 				3A9DC2232466E29F000A7AB3 /* SMStockSeasoningViewController.swift in Sources */,
 				3AB4E67E2471469300D52DDD /* SMUsingSeasoningCollectionViewModel.swift in Sources */,
 				3A828D982467C40E00A05F01 /* SMSettingViewController.swift in Sources */,
+				3A90794B24A4BFF400CA29F8 /* SMAddStockSeasoningViewController.swift in Sources */,
 				3A8E683024756C9100033414 /* SMStockSeasoningTableViewCellSectionOfModel.swift in Sources */,
 				3A8E9B7124924D2900732C86 /* SMImageManager.swift in Sources */,
 				3A70737F24700A7A00BACA4B /* SMUsingSeasoningCollectionViewCellModel.swift in Sources */,

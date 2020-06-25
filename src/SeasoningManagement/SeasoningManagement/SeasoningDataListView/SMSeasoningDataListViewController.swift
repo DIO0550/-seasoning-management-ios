@@ -99,7 +99,7 @@ class SMSeasoningDataListViewController: UIViewController {
     
     private func setupDataSource() {
         let dataSource = RxTableViewSectionedAnimatedDataSource<SMSeasoningDataListTableViewCellSectionOfModel>(
-            animationConfiguration: AnimationConfiguration(insertAnimation: .middle, reloadAnimation: .top, deleteAnimation: .fade),
+            animationConfiguration: AnimationConfiguration(insertAnimation: .middle, reloadAnimation: .top, deleteAnimation: .top),
             configureCell: { dataSource, tableView, indexPath, item in
                 let seasoningDataListTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSeasoningDataListTableViewCellIdentifier, for: indexPath) as! SMSeasoningDataListTableViewCell
                 let model: SMSeasoningDataListTableViewCellModel = dataSource[indexPath]
@@ -120,10 +120,7 @@ class SMSeasoningDataListViewController: UIViewController {
 }
 
 extension SMSeasoningDataListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return SMSeasoningDataListViewController.SeasoningDataListTableViewRowHegiht
-    }
-    
+
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = SMAssetsColor.seasoningManagementColor
     }
