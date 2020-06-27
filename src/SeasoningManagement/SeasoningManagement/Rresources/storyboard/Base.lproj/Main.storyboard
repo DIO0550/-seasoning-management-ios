@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="-1610" y="-1292"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Add Stock Seasoning View Controller-->
         <scene sceneID="Ltt-Xo-C75">
             <objects>
-                <viewController id="rpx-cI-6mq" sceneMemberID="viewController">
+                <viewController id="rpx-cI-6mq" customClass="SMSelectAddStockSeasoningViewController" customModule="SeasoningManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uw0-fW-tjZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,9 @@
                         <viewLayoutGuide key="safeArea" id="S5t-ET-npj"/>
                     </view>
                     <navigationItem key="navigationItem" id="SLC-pW-Ixz"/>
+                    <connections>
+                        <outlet property="selectAddStockSeasoningTableView" destination="Mw2-Hq-AiG" id="CAq-dc-hZT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2V-gG-j6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

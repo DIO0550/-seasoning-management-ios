@@ -1,23 +1,19 @@
 //
-//  SMSeasoningDataListTableViewModel.swift
+//  SMSelectAddStockSeasoningTableViewModel.swift
 //  SeasoningManagement
 //
-//  Created by DIO on 2020/05/27.
+//  Created by DIO on 2020/06/27.
 //  Copyright © 2020 DIO0550. All rights reserved.
 //
 
 import UIKit
+import RxDataSources
 import RxSwift
 import RxCocoa
-import RxDataSources
 
-class SMSeasoningDataListTableViewModel {
-    typealias Section = SMSeasoningDataListTableViewCellSectionOfModel
-    typealias Model = SMSeasoningDataListTableViewCellModel
-    
-    init() {
-        self.updateItems()
-    }
+class SMSelectAddStockSeasoningTableViewModel {
+    typealias Section = SMSelectAddStockSeasoningTableViewCellSectionOfModel
+    typealias Model = SMSelectAddStockSeasoningTableViewCellModel
     
     private var items = BehaviorRelay<[Section]>(value: [])
     
@@ -41,24 +37,5 @@ class SMSeasoningDataListTableViewModel {
             }
         }
         self.items.accept(value)
-    }
-    
-    func remove(indexPath: IndexPath) {
-        var value = self.items.value
-        var sections = value[indexPath.section]
-        let item = sections.items[indexPath.row]
-        
-        if sections.items.count == 1 {
-            value.remove(at: indexPath.section)
-        } else {
-            sections.items.remove(at: indexPath.row)
-        }
-        
-        self.items.accept(value)
-        
-        // テーブルビューから削除してから、coredataを削除する
-        // CoreDataを削除すると、Modelの調味料データが「data: <fault>」になるため。
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.deleteSeasoningData(seasoningData: item.seasoningData)
     }
 }

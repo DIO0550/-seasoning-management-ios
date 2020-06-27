@@ -15,6 +15,7 @@ struct SMCommonConst {
     static let SMAddUsingSeasoingViewControllerShowIndentifier = "SMAddUsingSeasoingViewControllerShowIndentifier"
     static let SMStockSeasoningTableViewCellIdentifier = "SMStockSeasoningTableViewCell"
     static let SMSeasoningDataListTableViewCellIdentifier = "SMSeasoningDataListTableViewCell"
+    static let SMSelectAddStockSeasoningTableViewCellIdentifier = "SMSelectAddStockSeasoningTableViewCell"
     static let SMSeasoningDataEditViewControllerIdentifier = "SMSeasoningDataEditViewControllerIdentifier"
     
     // MARK: Entity Name
