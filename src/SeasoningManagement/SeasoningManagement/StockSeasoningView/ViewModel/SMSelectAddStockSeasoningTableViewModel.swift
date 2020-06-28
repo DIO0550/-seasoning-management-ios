@@ -24,12 +24,11 @@ class SMSelectAddStockSeasoningTableViewModel {
     func updateItems() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let allSeasoningData = appDelegate.fetchAllSeasonignData()
-        var value = self.items.value
+        var value: [Section] = []
         for seasoningData in allSeasoningData {
-            let sameType = value.filter({ $0.header == seasoningData.type })
-            if sameType.first != nil {
-                var section = sameType.first!
-                section.items.append(SMSeasoningDataListTableViewCellModel.init(seasoningData: seasoningData))
+            let index = self.sameTypeFirstIndex(sections: value, seasoningType: seasoningData.type)
+            if index != nil {
+                value[index!].items += [SMSelectAddStockSeasoningTableViewCellModel(seasoningData: seasoningData)]
             }
             else {
                 let sectionOfCell = Section.init(header: seasoningData.type!, items: [Model.init(seasoningData: seasoningData)])
@@ -37,5 +36,18 @@ class SMSelectAddStockSeasoningTableViewModel {
             }
         }
         self.items.accept(value)
+    }
+    
+    private func sameTypeFirstIndex(sections: [Section], seasoningType: String?) -> Int? {
+        if sections.count == 0 { return nil }
+        guard let type = seasoningType else { return nil }
+        
+        for (index, section) in sections.enumerated() {
+            if section.header == type {
+                return index
+            }
+        }
+        
+        return nil
     }
 }

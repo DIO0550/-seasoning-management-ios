@@ -11,13 +11,13 @@ import RxSwift
 import RxDataSources
 import RxCocoa
 
-class SMSelectAddStockSeasoningViewController: UIViewController {
+class SMSelectAddStockSeasoningViewController: UIViewController, UITableViewDelegate {
     let disposeBag = DisposeBag()
     
     // データソース
     var dataSource: RxTableViewSectionedAnimatedDataSource<SMSelectAddStockSeasoningTableViewCellSectionOfModel>?
     // ビューモデル
-    var viewModel: SMSeasoningDataListTableViewModel = SMSeasoningDataListTableViewModel()
+    var viewModel: SMSelectAddStockSeasoningTableViewModel = SMSelectAddStockSeasoningTableViewModel()
     
     @IBOutlet weak var selectAddStockSeasoningTableView: UITableView! {
         didSet {
@@ -28,8 +28,64 @@ class SMSelectAddStockSeasoningViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
+        self.setupDataSource()
+        
+        self.selectAddStockSeasoningTableView.rx.setDelegate(self).disposed(by: self.disposeBag)
+        
+        self.viewModel.sectionsObservable()
+            .bind(to: self.selectAddStockSeasoningTableView.rx.items(dataSource: self.dataSource!))
+            .disposed(by: disposeBag)
+        
+        self.selectAddStockSeasoningTableView.rx
+            .modelSelected(SMSelectAddStockSeasoningTableViewCellModel.self)
+            .subscribe(onNext: { [weak self] model in
+                // TODO: 追加画面
+        }).disposed(by: disposeBag)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewModel.updateItems()
+    }
+
+    
+}
+
+extension SMSelectAddStockSeasoningViewController {
+    private func setupDataSource() {
+        let dataSource = RxTableViewSectionedAnimatedDataSource<SMSelectAddStockSeasoningTableViewCellSectionOfModel>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .middle, reloadAnimation: .top, deleteAnimation: .top),
+            configureCell: { dataSource, tableView, indexPath, item in
+                let selectAddSeasoningTableViewCell = tableView.dequeueReusableCell(withIdentifier: SMCommonConst.SMSelectAddStockSeasoningTableViewCellIdentifier, for: indexPath) as! SMSelectAddSeasoningTableViewCell
+                let model: SMSelectAddStockSeasoningTableViewCellModel = dataSource[indexPath]
+                self.setupSelectAddSeasoningTableViewCell(cell: selectAddSeasoningTableViewCell, seasoningData: model.seasoningData)
+                return selectAddSeasoningTableViewCell
+            },
+            titleForHeaderInSection: { dataSource, index in
+                return dataSource[index].header
+            }
+        )
+        
+        self.dataSource = dataSource
+        
+        self.dataSource?.canEditRowAtIndexPath = { dataSource, indexPath  in
+            return true
+        }
+    }
+    
+    private func setupSelectAddSeasoningTableViewCell(cell: SMSelectAddSeasoningTableViewCell, seasoningData: SeasoningData) {
+        
+       cell.imageView?.contentMode = .scaleAspectFit
+       // 画像
+       if let imageData = seasoningData.image {
+           let image = UIImage(data: imageData)
+           if image?.imageOrientation == .up {
+               cell.seasoningImageView.image = UIImage(data: imageData)
+           }
+       }
+       
+       // 名前
+       cell.seasoningNameLabel.text = seasoningData.name
+    }
 }
