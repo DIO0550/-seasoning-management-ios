@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260B0CA5027FE243ED4AD0EA /* Pods_SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */; };
+		3A40D54A24A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */; };
 		3AA80CE72491039C00B1E9CC /* SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */; };
 		3AA80CEC2491039C00B1E9CC /* SeasoningManagerCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA80CEB2491039C00B1E9CC /* SeasoningManagerCommonTests.swift */; };
 		3AA80CEE2491039C00B1E9CC /* SeasoningManagerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA80CE02491039C00B1E9CC /* SeasoningManagerCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,12 +25,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.release.xcconfig"; sourceTree = "<group>"; };
+		3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerKeyboardTextField.swift; sourceTree = "<group>"; };
 		3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA80CE02491039C00B1E9CC /* SeasoningManagerCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeasoningManagerCommon.h; sourceTree = "<group>"; };
 		3AA80CE12491039C00B1E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA80CE62491039C00B1E9CC /* SeasoningManagerCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasoningManagerCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA80CEB2491039C00B1E9CC /* SeasoningManagerCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasoningManagerCommonTests.swift; sourceTree = "<group>"; };
 		3AA80CED2491039C00B1E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260B0CA5027FE243ED4AD0EA /* Pods_SeasoningManagerCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C06C2B3C91404BA41AE65E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */,
+				22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		3A40D54824A8C4EF00DC49D5 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		3AA80CD32491039C00B1E9CC = {
 			isa = PBXGroup;
 			children = (
+				3A40D54824A8C4EF00DC49D5 /* Control */,
 				3AA80CDF2491039C00B1E9CC /* SeasoningManagerCommon */,
 				3AA80CEA2491039C00B1E9CC /* SeasoningManagerCommonTests */,
 				3AA80CDE2491039C00B1E9CC /* Products */,
+				0C06C2B3C91404BA41AE65E6 /* Pods */,
+				BFAF2C4F3E4D17E370850C6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +114,14 @@
 			path = SeasoningManagerCommonTests;
 			sourceTree = "<group>";
 		};
+		BFAF2C4F3E4D17E370850C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AA80CF12491039C00B1E9CC /* Build configuration list for PBXNativeTarget "SeasoningManagerCommon" */;
 			buildPhases = (
+				60034C0BF22179883DBC054B /* [CP] Check Pods Manifest.lock */,
 				3AA80CD82491039C00B1E9CC /* Headers */,
 				3AA80CD92491039C00B1E9CC /* Sources */,
 				3AA80CDA2491039C00B1E9CC /* Frameworks */,
@@ -148,6 +185,7 @@
 				TargetAttributes = {
 					3AA80CDC2491039C00B1E9CC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					3AA80CE52491039C00B1E9CC = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -190,11 +228,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60034C0BF22179883DBC054B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeasoningManagerCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AA80CD92491039C00B1E9CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A40D54A24A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +403,9 @@
 		};
 		3AA80CF22491039C00B1E9CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
@@ -356,6 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DIO0550.SeasoningManagerCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +430,9 @@
 		};
 		3AA80CF32491039C00B1E9CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
@@ -388,6 +457,7 @@
 		3AA80CF52491039C00B1E9CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
 				INFOPLIST_FILE = SeasoningManagerCommonTests/Info.plist;
@@ -406,6 +476,7 @@
 		3AA80CF62491039C00B1E9CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
 				INFOPLIST_FILE = SeasoningManagerCommonTests/Info.plist;

@@ -4,6 +4,7 @@
 
 workspace 'SeasoningManagement'
 project './SeasoningManagement/SeasoningManagement'
+project './SeasoningManagerCommon/SeasoningManagerCommon'
 platform :ios, '13.0'
 
 def shared_pod
@@ -21,7 +22,8 @@ end
 
 target 'SeasoningManagement' do
   use_frameworks!
-  
+  project './SeasoningManagement/SeasoningManagement'
+
   pod 'LicensePlist'
   shared_pod
   
@@ -31,4 +33,10 @@ target 'SeasoningManagement' do
     shared_pod
   end
 
+end
+
+target 'SeasoningManagerCommon' do
+  use_frameworks!
+  shared_pod
+  project './SeasoningManagerCommon/SeasoningManagerCommon'
 end
