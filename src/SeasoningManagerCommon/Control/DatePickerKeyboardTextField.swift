@@ -10,7 +10,12 @@ import UIKit
 /// 参考：https://qiita.com/wai21/items/c25740cbf1ce0c031eff
 class DatePickerKeyboardTextField: UITextField {
 
-    private var datePicker: UIDatePicker!
+    private lazy var datePicker: UIDatePicker = {
+        var picker = UIDatePicker()
+        picker.datePickerMode = .date
+        picker.locale = Locale(identifier: "ja")
+        return picker
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,5 +28,6 @@ class DatePickerKeyboardTextField: UITextField {
     }
     
     private func commonInit() {
+        self.inputView = self.datePicker;
     }
 }
