@@ -78,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    // MARK: SeasoningData
     func createSeasoningData() -> SeasoningData {
         let context = persistentContainer.viewContext
         let seasoningData = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningDataEntityName, into: context) as! SeasoningData
@@ -87,6 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func deleteSeasoningData(seasoningData: SeasoningData) {
         let context = persistentContainer.viewContext
+        self.deleteSeasoningNutrients(seasoningNutrients: seasoningData.nutrients)
         context.delete(seasoningData)
         do {
             try context.save()
@@ -107,11 +109,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    // SeasoningNutrients
     func createSeasoningNutrients() -> SeasoningNutrients {
         let context = persistentContainer.viewContext
         let seasoningNutrients = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningNutrientsEntityName, into: context) as! SeasoningNutrients
         return seasoningNutrients
     }
+    
+    func deleteSeasoningNutrients(seasoningNutrients: SeasoningNutrients?) {
+        if seasoningNutrients == nil { return }
+        let context = persistentContainer.viewContext
+        context.delete(seasoningNutrients!)
+        do {
+            try context.save()
+        } catch {
+            fatalError("Failed Delete seasoningNutrients: \(error)")
+        }
+    }
 
+    // Seasoning
+    func createSeasoning() -> Seasoning {
+        let context = persistentContainer.viewContext
+        let seasoning = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningEntityName, into: context) as! Seasoning
+        return seasoning
+    }
+    
+    func fetchAllSeasonign() -> [Seasoning] {
+        let context = persistentContainer.viewContext
+        let seasoningFetch = NSFetchRequest<NSFetchRequestResult>(entityName: SMCommonConst.SeasoningEntityName)
+        
+        do {
+            let seasoning = try context.fetch(seasoningFetch) as! [Seasoning]
+            return seasoning
+        } catch {
+            fatalError("Failed SeasoningData: \(error)")
+        }
+    }
 }
 

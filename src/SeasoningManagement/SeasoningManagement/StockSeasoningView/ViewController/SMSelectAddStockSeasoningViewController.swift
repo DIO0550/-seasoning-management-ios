@@ -41,6 +41,8 @@ class SMSelectAddStockSeasoningViewController: UIViewController, UITableViewDele
             .modelSelected(SMSelectAddStockSeasoningTableViewCellModel.self)
             .subscribe(onNext: { [weak self] model in
                 // TODO: 追加画面
+                self?.performSegue(withIdentifier: "SMAddStockSeasoningViewControllerIdentifier",
+                                   sender: nil)
         }).disposed(by: disposeBag)
         
     }

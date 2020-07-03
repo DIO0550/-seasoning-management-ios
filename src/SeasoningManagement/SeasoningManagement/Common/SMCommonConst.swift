@@ -21,4 +21,5 @@ struct SMCommonConst {
     // MARK: Entity Name
     static let SeasoningDataEntityName = "SeasoningData"
     static let SeasoningNutrientsEntityName = "SeasoningNutrients"
+    static let SeasoningEntityName = "Seasoning"
 }
