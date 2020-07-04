@@ -28,6 +28,10 @@ class SMStockSeasoningViewController: UIViewController, UITableViewDelegate {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+         self.viewModel.updateItems()
+     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

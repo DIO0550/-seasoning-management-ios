@@ -12,8 +12,14 @@ import RxSwift
 import RxDataSources
 
 struct SMStockSeasoningTableViewCellModel: IdentifiableType, Equatable {
-    var seasoningName: String
-    var stockCount: Int
+    var seasoningName: String? {
+        return self.seasoningData.name
+    }
+    var stockCount: Int = 1
+    var seasoningData: SeasoningData
+    init(seasoningData: SeasoningData) {
+        self.seasoningData = seasoningData
+    }
     
     typealias Identity = String
     var identity: String {

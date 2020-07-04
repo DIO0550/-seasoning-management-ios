@@ -14,6 +14,8 @@ import RxCocoa
 class SMSelectAddStockSeasoningViewController: UIViewController, UITableViewDelegate {
     let disposeBag = DisposeBag()
     
+    var seasoningData: SeasoningData?
+    
     // データソース
     var dataSource: RxTableViewSectionedAnimatedDataSource<SMSelectAddStockSeasoningTableViewCellSectionOfModel>?
     // ビューモデル
@@ -40,6 +42,7 @@ class SMSelectAddStockSeasoningViewController: UIViewController, UITableViewDele
         self.selectAddStockSeasoningTableView.rx
             .modelSelected(SMSelectAddStockSeasoningTableViewCellModel.self)
             .subscribe(onNext: { [weak self] model in
+                self?.seasoningData = model.seasoningData
                 // TODO: 追加画面
                 self?.performSegue(withIdentifier: "SMAddStockSeasoningViewControllerIdentifier",
                                    sender: nil)
@@ -51,6 +54,15 @@ class SMSelectAddStockSeasoningViewController: UIViewController, UITableViewDele
         self.viewModel.updateItems()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SMAddStockSeasoningViewControllerIdentifier" {
+            guard let seasoningData = self.seasoningData else {
+                return
+            }
+            let destVC = segue.destination as! SMAddStockSeasoningViewController
+            destVC.seasoningData = seasoningData;
+        }
+    }
     
 }
 

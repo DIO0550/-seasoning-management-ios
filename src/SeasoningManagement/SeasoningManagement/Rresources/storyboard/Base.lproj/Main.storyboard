@@ -148,7 +148,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="賞味期限" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-bk-swR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="賞味期限" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-bk-swR" customClass="DatePickerKeyboardTextField" customModule="SeasoningManagerCommon">
                                 <rect key="frame" x="20" y="368" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -172,6 +172,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneButton" destination="gJK-pQ-s8N" id="pf8-oS-pEN"/>
+                        <outlet property="expirationDateLabel" destination="UI0-bk-swR" id="WPd-sf-HR4"/>
+                        <outlet property="openingDateLabel" destination="VIz-Hg-Qor" id="fQo-2G-Nx1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEn-cf-N33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

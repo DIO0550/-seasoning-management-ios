@@ -9,9 +9,14 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SeasoningManagerCommon
 
 class SMAddStockSeasoningViewController: UIViewController {
     @IBOutlet weak var doneButton: UIBarButtonItem!
+    
+    @IBOutlet weak var expirationDateLabel: DatePickerKeyboardTextField!
+    
+    @IBOutlet weak var openingDateLabel: DatePickerKeyboardTextField!
     
     let disposeBag = DisposeBag()
     
@@ -20,6 +25,7 @@ class SMAddStockSeasoningViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.doneButton.rx.tap.asDriver().drive(onNext: { [weak self] in
+            self?.createSeaoningFromInputData()
             // rootViewControllerの2つ先のViewControllerに戻る
             self?.navigationController?.popToViewController((self?.navigationController!.viewControllers[0] ?? nil)!, animated: true)
         })
@@ -32,9 +38,10 @@ class SMAddStockSeasoningViewController: UIViewController {
         seasoning.identifier = UUID()
         seasoning.seasoningData = self.seasoningData
         // 賞味期限
-        seasoning.expirationDate = Date()
+        seasoning.expirationDate = self.expirationDateLabel.dateValue()
         // 開封日
-        seasoning.openingDate = Date()
+        seasoning.openingDate = self.openingDateLabel.dateValue()
+        appDelegate.saveContext()
     }
 
 }

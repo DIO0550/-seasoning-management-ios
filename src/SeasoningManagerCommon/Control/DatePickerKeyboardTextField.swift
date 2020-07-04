@@ -7,8 +7,8 @@
 //
 
 import UIKit
-/// 参考：https://qiita.com/wai21/items/c25740cbf1ce0c031eff
-class DatePickerKeyboardTextField: UITextField {
+
+public class DatePickerKeyboardTextField: UITextField {
     
     var dateFormatterString = "yyyy年MM月dd日"
 
@@ -44,6 +44,10 @@ class DatePickerKeyboardTextField: UITextField {
         return toolbar
     }
     
+    public func dateValue() -> Date {
+        return self.datePicker.date
+    }
+    
     @objc private func doneButtonAction() {
         self.applyPickerValueToText()
         self.resignFirstResponder()
@@ -55,15 +59,15 @@ class DatePickerKeyboardTextField: UITextField {
         self.text = dateFormatter.string(from: self.datePicker.date)
     }
     
-    override func caretRect(for position: UITextPosition) -> CGRect {
+    override public func caretRect(for position: UITextPosition) -> CGRect {
         return CGRect.zero
     }
     
-    override func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+    override public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
         return []
     }
 
-    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         return false
     }
 }
