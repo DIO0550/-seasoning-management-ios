@@ -145,5 +145,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Failed SeasoningData: \(error)")
         }
     }
+    
+    func fetchSeasoningFilterSeasningData(seasoningData: SeasoningData?) -> [Seasoning] {
+        guard let data = seasoningData else { return [] }
+        // 削除されて、データがなくなっている場合
+        if data.identifier == nil { return [] }
+        
+        let context = persistentContainer.viewContext
+        let seasoningFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: SMCommonConst.SeasoningEntityName)
+        do {
+            let allSeasoning = try context.fetch(seasoningFetchRequest) as! [Seasoning]
+            return allSeasoning.filter { return $0.seasoningData == data }
+            
+        } catch {
+            fatalError("Failed SeasoningData: \(error)")
+        }
+    }
 }
 

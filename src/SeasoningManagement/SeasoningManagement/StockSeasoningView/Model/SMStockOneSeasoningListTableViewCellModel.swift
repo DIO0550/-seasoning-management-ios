@@ -16,7 +16,7 @@ struct SMStockOneSeasoningListTableViewCellModel: IdentifiableType, Equatable {
     var seasoningName: String? {
         return self.seasoning.seasoningData!.name
     }
-    var stockCount: Int = 1
+    
     var seasoning: Seasoning
     init(seasoning: Seasoning) {
         self.seasoning = seasoning

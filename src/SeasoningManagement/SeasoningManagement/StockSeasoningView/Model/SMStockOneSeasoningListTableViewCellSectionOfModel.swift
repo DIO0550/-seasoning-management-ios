@@ -12,12 +12,9 @@ import RxSwift
 import RxDataSources
 
 struct SMStockOneSeasoningListTableViewCellSectionOfModel {
-    public var header: String
-    public var items: [Item]
+    public var items: [Item] = []
     
-    init(header: String, items: [Item]) {
-        self.header = header
-        self.items = items
+    init() {
     }
 }
 
@@ -32,6 +29,6 @@ extension SMStockOneSeasoningListTableViewCellSectionOfModel: AnimatableSectionM
     }
     
     var identity: String {
-        return self.header
+        return UUID().uuidString
     }
 }
