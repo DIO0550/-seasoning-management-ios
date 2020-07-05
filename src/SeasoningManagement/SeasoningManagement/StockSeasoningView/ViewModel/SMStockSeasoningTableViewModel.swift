@@ -54,12 +54,13 @@ class SMStockSeasoningTableViewModel {
     
     private func incrementSameStockSeasoningCount( items :inout [Model], seasoningData: SeasoningData) {
         for i in 0 ..< items.count {
-            if items[i].seasoningData == seasoningData {
-                var item = items[i]
-                item.stockCount += 1
-                items[i] = item
-                return
+            if items[i].seasoningData != seasoningData {
+                continue
             }
+            var item = items[i]
+            item.stockCount += 1
+            items[i] = item
+            return
         }
     }
 }

@@ -61,6 +61,12 @@ class SMStockSeasoningViewController: UIViewController, UITableViewDelegate {
         })
         .disposed(by: disposeBag)
         
+        self.stockSeasoningTableView.rx
+            .modelSelected(SMStockSeasoningTableViewCellModel.self)
+            .subscribe(onNext: { [weak self] model in
+                self?.performSegue(withIdentifier: "SMStockOneSeasoningListViewControllerIdentifier",
+                                   sender: nil)
+            }).disposed(by: disposeBag)
     }
 }
 
