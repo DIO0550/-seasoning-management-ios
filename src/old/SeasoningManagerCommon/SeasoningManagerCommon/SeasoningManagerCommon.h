@@ -2,7 +2,8 @@
 //  SeasoningManagerCommon.h
 //  SeasoningManagerCommon
 //
-//  Created by DIO on 2020/11/14.
+//  Created by DIO on 2020/06/10.
+//  Copyright © 2020 DIO0550. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

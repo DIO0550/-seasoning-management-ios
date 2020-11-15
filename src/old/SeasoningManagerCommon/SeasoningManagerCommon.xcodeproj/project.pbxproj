@@ -7,106 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AE27E51255FD98100D3E011 /* SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE27E47255FD98100D3E011 /* SeasoningManagerCommon.framework */; };
-		3AE27E56255FD98100D3E011 /* SeasoningManagerCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE27E55255FD98100D3E011 /* SeasoningManagerCommonTests.swift */; };
-		3AE27E58255FD98100D3E011 /* SeasoningManagerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE27E4A255FD98100D3E011 /* SeasoningManagerCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD045AF61F6F192CBEAED0E4 /* Pods_SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93C1EA6CD97982D802D0E24 /* Pods_SeasoningManagerCommon.framework */; };
+		260B0CA5027FE243ED4AD0EA /* Pods_SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */; };
+		3A40D54A24A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */; };
+		3AA80CE72491039C00B1E9CC /* SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */; };
+		3AA80CEC2491039C00B1E9CC /* SeasoningManagerCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA80CEB2491039C00B1E9CC /* SeasoningManagerCommonTests.swift */; };
+		3AA80CEE2491039C00B1E9CC /* SeasoningManagerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA80CE02491039C00B1E9CC /* SeasoningManagerCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AE27E52255FD98100D3E011 /* PBXContainerItemProxy */ = {
+		3AA80CE82491039C00B1E9CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AE27E3E255FD98100D3E011 /* Project object */;
+			containerPortal = 3AA80CD42491039C00B1E9CC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3AE27E46255FD98100D3E011;
+			remoteGlobalIDString = 3AA80CDC2491039C00B1E9CC;
 			remoteInfo = SeasoningManagerCommon;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3AE27E47255FD98100D3E011 /* SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AE27E4A255FD98100D3E011 /* SeasoningManagerCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeasoningManagerCommon.h; sourceTree = "<group>"; };
-		3AE27E4B255FD98100D3E011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AE27E50255FD98100D3E011 /* SeasoningManagerCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasoningManagerCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AE27E55255FD98100D3E011 /* SeasoningManagerCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasoningManagerCommonTests.swift; sourceTree = "<group>"; };
-		3AE27E57255FD98100D3E011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B4D36A9F72E3F55151EE0CC /* Pods-SeasoningManagerCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.debug.xcconfig"; sourceTree = "<group>"; };
-		AD4655DF7056486A6ADAC0F1 /* Pods-SeasoningManagerCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.release.xcconfig"; sourceTree = "<group>"; };
-		E93C1EA6CD97982D802D0E24 /* Pods_SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.release.xcconfig"; sourceTree = "<group>"; };
+		3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerKeyboardTextField.swift; sourceTree = "<group>"; };
+		3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA80CE02491039C00B1E9CC /* SeasoningManagerCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeasoningManagerCommon.h; sourceTree = "<group>"; };
+		3AA80CE12491039C00B1E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA80CE62491039C00B1E9CC /* SeasoningManagerCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasoningManagerCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA80CEB2491039C00B1E9CC /* SeasoningManagerCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasoningManagerCommonTests.swift; sourceTree = "<group>"; };
+		3AA80CED2491039C00B1E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerCommon.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerCommon/Pods-SeasoningManagerCommon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3AE27E44255FD98100D3E011 /* Frameworks */ = {
+		3AA80CDA2491039C00B1E9CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD045AF61F6F192CBEAED0E4 /* Pods_SeasoningManagerCommon.framework in Frameworks */,
+				260B0CA5027FE243ED4AD0EA /* Pods_SeasoningManagerCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AE27E4D255FD98100D3E011 /* Frameworks */ = {
+		3AA80CE32491039C00B1E9CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE27E51255FD98100D3E011 /* SeasoningManagerCommon.framework in Frameworks */,
+				3AA80CE72491039C00B1E9CC /* SeasoningManagerCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3AE27E3D255FD98100D3E011 = {
+		0C06C2B3C91404BA41AE65E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3AE27E49255FD98100D3E011 /* SeasoningManagerCommon */,
-				3AE27E54255FD98100D3E011 /* SeasoningManagerCommonTests */,
-				3AE27E48255FD98100D3E011 /* Products */,
-				748D24879958D000F8AC00F7 /* Pods */,
-				EE637DFB7CBB52823D69A5B4 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		3AE27E48255FD98100D3E011 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3AE27E47255FD98100D3E011 /* SeasoningManagerCommon.framework */,
-				3AE27E50255FD98100D3E011 /* SeasoningManagerCommonTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3AE27E49255FD98100D3E011 /* SeasoningManagerCommon */ = {
-			isa = PBXGroup;
-			children = (
-				3AE27E4A255FD98100D3E011 /* SeasoningManagerCommon.h */,
-				3AE27E4B255FD98100D3E011 /* Info.plist */,
-			);
-			path = SeasoningManagerCommon;
-			sourceTree = "<group>";
-		};
-		3AE27E54255FD98100D3E011 /* SeasoningManagerCommonTests */ = {
-			isa = PBXGroup;
-			children = (
-				3AE27E55255FD98100D3E011 /* SeasoningManagerCommonTests.swift */,
-				3AE27E57255FD98100D3E011 /* Info.plist */,
-			);
-			path = SeasoningManagerCommonTests;
-			sourceTree = "<group>";
-		};
-		748D24879958D000F8AC00F7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6B4D36A9F72E3F55151EE0CC /* Pods-SeasoningManagerCommon.debug.xcconfig */,
-				AD4655DF7056486A6ADAC0F1 /* Pods-SeasoningManagerCommon.release.xcconfig */,
+				FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */,
+				22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		EE637DFB7CBB52823D69A5B4 /* Frameworks */ = {
+		3A40D54824A8C4EF00DC49D5 /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				E93C1EA6CD97982D802D0E24 /* Pods_SeasoningManagerCommon.framework */,
+				3A40D54924A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		3AA80CD32491039C00B1E9CC = {
+			isa = PBXGroup;
+			children = (
+				3A40D54824A8C4EF00DC49D5 /* Control */,
+				3AA80CDF2491039C00B1E9CC /* SeasoningManagerCommon */,
+				3AA80CEA2491039C00B1E9CC /* SeasoningManagerCommonTests */,
+				3AA80CDE2491039C00B1E9CC /* Products */,
+				0C06C2B3C91404BA41AE65E6 /* Pods */,
+				BFAF2C4F3E4D17E370850C6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA80CDE2491039C00B1E9CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */,
+				3AA80CE62491039C00B1E9CC /* SeasoningManagerCommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA80CDF2491039C00B1E9CC /* SeasoningManagerCommon */ = {
+			isa = PBXGroup;
+			children = (
+				3AA80CE02491039C00B1E9CC /* SeasoningManagerCommon.h */,
+				3AA80CE12491039C00B1E9CC /* Info.plist */,
+			);
+			path = SeasoningManagerCommon;
+			sourceTree = "<group>";
+		};
+		3AA80CEA2491039C00B1E9CC /* SeasoningManagerCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AA80CEB2491039C00B1E9CC /* SeasoningManagerCommonTests.swift */,
+				3AA80CED2491039C00B1E9CC /* Info.plist */,
+			);
+			path = SeasoningManagerCommonTests;
+			sourceTree = "<group>";
+		};
+		BFAF2C4F3E4D17E370850C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEDE482CE07B83C039C0B68 /* Pods_SeasoningManagerCommon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,26 +125,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3AE27E42255FD98100D3E011 /* Headers */ = {
+		3AA80CD82491039C00B1E9CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE27E58255FD98100D3E011 /* SeasoningManagerCommon.h in Headers */,
+				3AA80CEE2491039C00B1E9CC /* SeasoningManagerCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3AE27E46255FD98100D3E011 /* SeasoningManagerCommon */ = {
+		3AA80CDC2491039C00B1E9CC /* SeasoningManagerCommon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AE27E5B255FD98100D3E011 /* Build configuration list for PBXNativeTarget "SeasoningManagerCommon" */;
+			buildConfigurationList = 3AA80CF12491039C00B1E9CC /* Build configuration list for PBXNativeTarget "SeasoningManagerCommon" */;
 			buildPhases = (
-				47EFDE7A5D285EB4A1B4FA21 /* [CP] Check Pods Manifest.lock */,
-				3AE27E42255FD98100D3E011 /* Headers */,
-				3AE27E43255FD98100D3E011 /* Sources */,
-				3AE27E44255FD98100D3E011 /* Frameworks */,
-				3AE27E45255FD98100D3E011 /* Resources */,
+				60034C0BF22179883DBC054B /* [CP] Check Pods Manifest.lock */,
+				3AA80CD82491039C00B1E9CC /* Headers */,
+				3AA80CD92491039C00B1E9CC /* Sources */,
+				3AA80CDA2491039C00B1E9CC /* Frameworks */,
+				3AA80CDB2491039C00B1E9CC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,45 +152,47 @@
 			);
 			name = SeasoningManagerCommon;
 			productName = SeasoningManagerCommon;
-			productReference = 3AE27E47255FD98100D3E011 /* SeasoningManagerCommon.framework */;
+			productReference = 3AA80CDD2491039C00B1E9CC /* SeasoningManagerCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3AE27E4F255FD98100D3E011 /* SeasoningManagerCommonTests */ = {
+		3AA80CE52491039C00B1E9CC /* SeasoningManagerCommonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AE27E5E255FD98100D3E011 /* Build configuration list for PBXNativeTarget "SeasoningManagerCommonTests" */;
+			buildConfigurationList = 3AA80CF42491039C00B1E9CC /* Build configuration list for PBXNativeTarget "SeasoningManagerCommonTests" */;
 			buildPhases = (
-				3AE27E4C255FD98100D3E011 /* Sources */,
-				3AE27E4D255FD98100D3E011 /* Frameworks */,
-				3AE27E4E255FD98100D3E011 /* Resources */,
+				3AA80CE22491039C00B1E9CC /* Sources */,
+				3AA80CE32491039C00B1E9CC /* Frameworks */,
+				3AA80CE42491039C00B1E9CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3AE27E53255FD98100D3E011 /* PBXTargetDependency */,
+				3AA80CE92491039C00B1E9CC /* PBXTargetDependency */,
 			);
 			name = SeasoningManagerCommonTests;
 			productName = SeasoningManagerCommonTests;
-			productReference = 3AE27E50255FD98100D3E011 /* SeasoningManagerCommonTests.xctest */;
+			productReference = 3AA80CE62491039C00B1E9CC /* SeasoningManagerCommonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3AE27E3E255FD98100D3E011 /* Project object */ = {
+		3AA80CD42491039C00B1E9CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = DIO0550;
 				TargetAttributes = {
-					3AE27E46255FD98100D3E011 = {
-						CreatedOnToolsVersion = 12.2;
+					3AA80CDC2491039C00B1E9CC = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
-					3AE27E4F255FD98100D3E011 = {
-						CreatedOnToolsVersion = 12.2;
+					3AA80CE52491039C00B1E9CC = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 3AE27E41255FD98100D3E011 /* Build configuration list for PBXProject "SeasoningManagerCommon" */;
+			buildConfigurationList = 3AA80CD72491039C00B1E9CC /* Build configuration list for PBXProject "SeasoningManagerCommon" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,26 +200,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 3AE27E3D255FD98100D3E011;
-			productRefGroup = 3AE27E48255FD98100D3E011 /* Products */;
+			mainGroup = 3AA80CD32491039C00B1E9CC;
+			productRefGroup = 3AA80CDE2491039C00B1E9CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AE27E46255FD98100D3E011 /* SeasoningManagerCommon */,
-				3AE27E4F255FD98100D3E011 /* SeasoningManagerCommonTests */,
+				3AA80CDC2491039C00B1E9CC /* SeasoningManagerCommon */,
+				3AA80CE52491039C00B1E9CC /* SeasoningManagerCommonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3AE27E45255FD98100D3E011 /* Resources */ = {
+		3AA80CDB2491039C00B1E9CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AE27E4E255FD98100D3E011 /* Resources */ = {
+		3AA80CE42491039C00B1E9CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,7 +229,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47EFDE7A5D285EB4A1B4FA21 /* [CP] Check Pods Manifest.lock */ = {
+		60034C0BF22179883DBC054B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,33 +254,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3AE27E43255FD98100D3E011 /* Sources */ = {
+		3AA80CD92491039C00B1E9CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A40D54A24A8C5EC00DC49D5 /* DatePickerKeyboardTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AE27E4C255FD98100D3E011 /* Sources */ = {
+		3AA80CE22491039C00B1E9CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE27E56255FD98100D3E011 /* SeasoningManagerCommonTests.swift in Sources */,
+				3AA80CEC2491039C00B1E9CC /* SeasoningManagerCommonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3AE27E53255FD98100D3E011 /* PBXTargetDependency */ = {
+		3AA80CE92491039C00B1E9CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3AE27E46255FD98100D3E011 /* SeasoningManagerCommon */;
-			targetProxy = 3AE27E52255FD98100D3E011 /* PBXContainerItemProxy */;
+			target = 3AA80CDC2491039C00B1E9CC /* SeasoningManagerCommon */;
+			targetProxy = 3AA80CE82491039C00B1E9CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3AE27E59255FD98100D3E011 /* Debug */ = {
+		3AA80CEF2491039C00B1E9CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +307,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -319,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +344,7 @@
 			};
 			name = Debug;
 		};
-		3AE27E5A255FD98100D3E011 /* Release */ = {
+		3AA80CF02491039C00B1E9CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +370,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -377,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -389,10 +401,11 @@
 			};
 			name = Release;
 		};
-		3AE27E5C255FD98100D3E011 /* Debug */ = {
+		3AA80CF22491039C00B1E9CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B4D36A9F72E3F55151EE0CC /* Pods-SeasoningManagerCommon.debug.xcconfig */;
+			baseConfigurationReference = FBF917BB891315510AE38048 /* Pods-SeasoningManagerCommon.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
@@ -401,7 +414,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeasoningManagerCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,16 +423,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DIO0550.SeasoningManagerCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3AE27E5D255FD98100D3E011 /* Release */ = {
+		3AA80CF32491039C00B1E9CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD4655DF7056486A6ADAC0F1 /* Pods-SeasoningManagerCommon.release.xcconfig */;
+			baseConfigurationReference = 22C60452540720178EB6041C /* Pods-SeasoningManagerCommon.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
@@ -428,7 +442,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeasoningManagerCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,15 +451,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DIO0550.SeasoningManagerCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		3AE27E5F255FD98100D3E011 /* Debug */ = {
+		3AA80CF52491039C00B1E9CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
 				INFOPLIST_FILE = SeasoningManagerCommonTests/Info.plist;
@@ -461,9 +475,10 @@
 			};
 			name = Debug;
 		};
-		3AE27E60255FD98100D3E011 /* Release */ = {
+		3AA80CF62491039C00B1E9CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMVJT9K8W3;
 				INFOPLIST_FILE = SeasoningManagerCommonTests/Info.plist;
@@ -482,34 +497,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AE27E41255FD98100D3E011 /* Build configuration list for PBXProject "SeasoningManagerCommon" */ = {
+		3AA80CD72491039C00B1E9CC /* Build configuration list for PBXProject "SeasoningManagerCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AE27E59255FD98100D3E011 /* Debug */,
-				3AE27E5A255FD98100D3E011 /* Release */,
+				3AA80CEF2491039C00B1E9CC /* Debug */,
+				3AA80CF02491039C00B1E9CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AE27E5B255FD98100D3E011 /* Build configuration list for PBXNativeTarget "SeasoningManagerCommon" */ = {
+		3AA80CF12491039C00B1E9CC /* Build configuration list for PBXNativeTarget "SeasoningManagerCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AE27E5C255FD98100D3E011 /* Debug */,
-				3AE27E5D255FD98100D3E011 /* Release */,
+				3AA80CF22491039C00B1E9CC /* Debug */,
+				3AA80CF32491039C00B1E9CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AE27E5E255FD98100D3E011 /* Build configuration list for PBXNativeTarget "SeasoningManagerCommonTests" */ = {
+		3AA80CF42491039C00B1E9CC /* Build configuration list for PBXNativeTarget "SeasoningManagerCommonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AE27E5F255FD98100D3E011 /* Debug */,
-				3AE27E60255FD98100D3E011 /* Release */,
+				3AA80CF52491039C00B1E9CC /* Debug */,
+				3AA80CF62491039C00B1E9CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3AE27E3E255FD98100D3E011 /* Project object */;
+	rootObject = 3AA80CD42491039C00B1E9CC /* Project object */;
 }

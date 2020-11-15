@@ -1,14 +1,14 @@
 //
-//  SeasoningManagerCommonTests.swift
-//  SeasoningManagerCommonTests
+//  SeasoningManagerTests.swift
+//  SeasoningManagerTests
 //
 //  Created by DIO on 2020/11/14.
 //
 
 import XCTest
-@testable import SeasoningManagerCommon
+@testable import SeasoningManager
 
-class SeasoningManagerCommonTests: XCTestCase {
+class SeasoningManagerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

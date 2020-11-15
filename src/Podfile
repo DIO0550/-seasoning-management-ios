@@ -2,8 +2,8 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-workspace 'SeasoningManagement'
-project './SeasoningManagement/SeasoningManagement'
+workspace 'SeasoningManagemer'
+project './SeasoningManager/SeasoningManager'
 project './SeasoningManagerCommon/SeasoningManagerCommon'
 platform :ios, '13.0'
 
@@ -20,14 +20,14 @@ def test_shared_pod
 end
 
 
-target 'SeasoningManagement' do
+target 'SeasoningManager' do
   use_frameworks!
-  project './SeasoningManagement/SeasoningManagement'
+  project './SeasoningManager/SeasoningManager'
 
   pod 'LicensePlist'
   shared_pod
   
-  target 'SeasoningManagementTests' do
+  target 'SeasoningManagerTests' do
     inherit! :search_paths
     # Pods for testing
     shared_pod
