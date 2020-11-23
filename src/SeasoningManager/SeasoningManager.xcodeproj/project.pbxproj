@@ -10,6 +10,10 @@
 		3A1F6960255FDBDC00BF15C5 /* SeasoningManagerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1F695F255FDBDC00BF15C5 /* SeasoningManagerCommon.framework */; };
 		3A1F6961255FDBDC00BF15C5 /* SeasoningManagerCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1F695F255FDBDC00BF15C5 /* SeasoningManagerCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A7C240825616D7100E0C7A8 /* SeasoningManagerListCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C240725616D7100E0C7A8 /* SeasoningManagerListCellView.xib */; };
+		3A89DFF2256B8BBA00D576B2 /* SMCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A89DFF1256B8BBA00D576B2 /* SMCommonConst.swift */; };
+		3A90BD73256A384A007669C9 /* SMSeasoningListTableViewCellSectionOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90BD72256A384A007669C9 /* SMSeasoningListTableViewCellSectionOfModel.swift */; };
+		3A90BD79256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90BD78256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift */; };
+		3A90BD7E256A48FD007669C9 /* SMSeasoningListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90BD7D256A48FD007669C9 /* SMSeasoningListViewModel.swift */; };
 		3A9BF0BD255FD26F00030476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BF0BC255FD26F00030476 /* AppDelegate.swift */; };
 		3A9BF0BF255FD26F00030476 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BF0BE255FD26F00030476 /* SceneDelegate.swift */; };
 		3A9BF0C1255FD26F00030476 /* SMSeasoningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BF0C0255FD26F00030476 /* SMSeasoningListViewController.swift */; };
@@ -58,6 +62,10 @@
 		34939227C632709251266EEE /* Pods-SeasoningManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerTests.release.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerTests/Pods-SeasoningManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A1F695F255FDBDC00BF15C5 /* SeasoningManagerCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SeasoningManagerCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7C240725616D7100E0C7A8 /* SeasoningManagerListCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasoningManagerListCellView.xib; sourceTree = "<group>"; };
+		3A89DFF1256B8BBA00D576B2 /* SMCommonConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCommonConst.swift; sourceTree = "<group>"; };
+		3A90BD72256A384A007669C9 /* SMSeasoningListTableViewCellSectionOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningListTableViewCellSectionOfModel.swift; sourceTree = "<group>"; };
+		3A90BD78256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningListTableViewCellModel.swift; sourceTree = "<group>"; };
+		3A90BD7D256A48FD007669C9 /* SMSeasoningListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningListViewModel.swift; sourceTree = "<group>"; };
 		3A9BF0B9255FD26F00030476 /* SeasoningManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasoningManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9BF0BC255FD26F00030476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9BF0BE255FD26F00030476 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +155,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3A89DFF0256B8B9900D576B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3A89DFF1256B8BBA00D576B2 /* SMCommonConst.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3A90BD71256A32CD007669C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A90BD72256A384A007669C9 /* SMSeasoningListTableViewCellSectionOfModel.swift */,
+				3A90BD78256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A90BD7C256A4725007669C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A90BD7D256A48FD007669C9 /* SMSeasoningListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3A9BF0B0255FD26F00030476 = {
 			isa = PBXGroup;
 			children = (
@@ -174,8 +207,11 @@
 			children = (
 				3A9BF0BC255FD26F00030476 /* AppDelegate.swift */,
 				3A9BF0BE255FD26F00030476 /* SceneDelegate.swift */,
-				3A7C2403256163DA00E0C7A8 /* Resource */,
+				3A89DFF0256B8B9900D576B2 /* Common */,
 				3A7C2400256162D300E0C7A8 /* ViewController */,
+				3A90BD7C256A4725007669C9 /* ViewModel */,
+				3A90BD71256A32CD007669C9 /* Model */,
+				3A7C2403256163DA00E0C7A8 /* Resource */,
 				3A9BF0CD255FD27100030476 /* Info.plist */,
 				3A9BF0C5255FD26F00030476 /* SeasoningManager.xcdatamodeld */,
 			);
@@ -427,10 +463,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A90BD7E256A48FD007669C9 /* SMSeasoningListViewModel.swift in Sources */,
 				3A9BF0C1255FD26F00030476 /* SMSeasoningListViewController.swift in Sources */,
 				3A9BF0BD255FD26F00030476 /* AppDelegate.swift in Sources */,
 				3A9BF0BF255FD26F00030476 /* SceneDelegate.swift in Sources */,
+				3A90BD79256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift in Sources */,
 				3A9BF0C7255FD26F00030476 /* SeasoningManager.xcdatamodeld in Sources */,
+				3A89DFF2256B8BBA00D576B2 /* SMCommonConst.swift in Sources */,
+				3A90BD73256A384A007669C9 /* SMSeasoningListTableViewCellSectionOfModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

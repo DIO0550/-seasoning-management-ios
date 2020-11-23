@@ -80,6 +80,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    // MARK: SeasoningData
+    func createSeasoning() -> Seasoning {
+        let context = persistentContainer.viewContext
+        let seasoning = NSEntityDescription.insertNewObject(forEntityName: SMCommonConst.SeasoningEntityName, into: context) as! Seasoning
+        return seasoning
+    }
+    
+    func deleteSeasoning(seasoning: Seasoning) {
+        let context = persistentContainer.viewContext
+        context.delete(seasoning)
+        do {
+            try context.save()
+        } catch {
+            fatalError("Failed Delete SeasoningData: \(error)")
+        }
+    }
+    
+    func fetchAllSeasoning() -> [Seasoning] {
+        let context = persistentContainer.viewContext
+        let seasoningDataFetch = NSFetchRequest<NSFetchRequestResult>(entityName: SMCommonConst.SeasoningEntityName)
+        
+        do {
+            let seasoningData = try context.fetch(seasoningDataFetch) as! [Seasoning]
+            return seasoningData
+        } catch {
+            fatalError("Failed SeasoningData: \(error)")
+        }
+    }
 
 }
 
