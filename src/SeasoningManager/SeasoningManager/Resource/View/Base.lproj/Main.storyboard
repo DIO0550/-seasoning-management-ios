@@ -38,15 +38,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="seasoningListTableView" destination="ldo-IG-efU" id="34M-fA-cQn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576.81159420289862" y="64.955357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Seasoning List View Controller-->
         <scene sceneID="SpL-2d-vBm">
             <objects>
-                <viewController id="ygF-T0-Ppo" sceneMemberID="viewController">
+                <viewController id="ygF-T0-Ppo" customClass="SMSeasoningListViewController" customModule="SeasoningManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DH5-rS-3Jc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
