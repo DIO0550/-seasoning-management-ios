@@ -15,7 +15,6 @@ struct SMSeasoningListTableViewCellModel: IdentifiableType, Equatable {
     var seasoningName: String? {
         return self.seasoning.name
     }
-    var stockCount: Int = 1
     var seasoning: Seasoning
     init(seasoning: Seasoning) {
         self.seasoning = seasoning

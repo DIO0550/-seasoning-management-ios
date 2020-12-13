@@ -24,6 +24,7 @@
 		3A9BF0D7255FD27100030476 /* SeasoningManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BF0D6255FD27100030476 /* SeasoningManagerTests.swift */; };
 		3A9BF0E2255FD27100030476 /* SeasoningManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9BF0E1255FD27100030476 /* SeasoningManagerUITests.swift */; };
 		3AEE853825722D3C00399452 /* SMNibNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE853725722D3C00399452 /* SMNibNames.swift */; };
+		3AF543DF257B66F20092D84C /* SMSeasoningListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF543DE257B66F20092D84C /* SMSeasoningListTableViewCell.swift */; };
 		4B27D82035309C4FFCAA2250 /* Pods_SeasoningManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54633344D076821463B41975 /* Pods_SeasoningManager.framework */; };
 		B4A7079E3B3D8EFB318877D5 /* Pods_SeasoningManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04AA6E9D2BE8408EB87B991 /* Pods_SeasoningManagerTests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		3A9BF0E1255FD27100030476 /* SeasoningManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasoningManagerUITests.swift; sourceTree = "<group>"; };
 		3A9BF0E3255FD27100030476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AEE853725722D3C00399452 /* SMNibNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMNibNames.swift; sourceTree = "<group>"; };
+		3AF543DE257B66F20092D84C /* SMSeasoningListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSeasoningListTableViewCell.swift; sourceTree = "<group>"; };
 		54633344D076821463B41975 /* Pods_SeasoningManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeasoningManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		593B43276B7C9BA33364D49E /* Pods-SeasoningManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManagerTests/Pods-SeasoningManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C531C017C9BEEA9A3ED66FB /* Pods-SeasoningManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeasoningManager.debug.xcconfig"; path = "Target Support Files/Pods-SeasoningManager/Pods-SeasoningManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				3A89DFF0256B8B9900D576B2 /* Common */,
 				3A7C2400256162D300E0C7A8 /* ViewController */,
 				3A90BD7C256A4725007669C9 /* ViewModel */,
+				3AF543DD257B65280092D84C /* CellView */,
 				3A90BD71256A32CD007669C9 /* Model */,
 				3A7C2403256163DA00E0C7A8 /* Resource */,
 				3A9BF0CD255FD27100030476 /* Info.plist */,
@@ -237,6 +240,14 @@
 				3A9BF0E3255FD27100030476 /* Info.plist */,
 			);
 			path = SeasoningManagerUITests;
+			sourceTree = "<group>";
+		};
+		3AF543DD257B65280092D84C /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				3AF543DE257B66F20092D84C /* SMSeasoningListTableViewCell.swift */,
+			);
+			path = CellView;
 			sourceTree = "<group>";
 		};
 		A4F6060B861F2D2EBA03D43F /* Frameworks */ = {
@@ -469,6 +480,7 @@
 				3A90BD7E256A48FD007669C9 /* SMSeasoningListViewModel.swift in Sources */,
 				3A9BF0C1255FD26F00030476 /* SMSeasoningListViewController.swift in Sources */,
 				3A9BF0BD255FD26F00030476 /* AppDelegate.swift in Sources */,
+				3AF543DF257B66F20092D84C /* SMSeasoningListTableViewCell.swift in Sources */,
 				3A9BF0BF255FD26F00030476 /* SceneDelegate.swift in Sources */,
 				3A90BD79256A3A1F007669C9 /* SMSeasoningListTableViewCellModel.swift in Sources */,
 				3A9BF0C7255FD26F00030476 /* SeasoningManager.xcdatamodeld in Sources */,

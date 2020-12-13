@@ -8,6 +8,12 @@
 import UIKit
 
 public struct SMCommonConst {
+    
     // MARK: Entity Name
     static let SeasoningEntityName = "Seasoning"
+    
+    // Identifier
+    public struct Identifier {
+        static let SMSeasoningListIdentifier = "SMSeasoningListIdentifier"
+    }
 }

@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMSeasoningListTableViewCell" customModule="SeasoningManager" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="531" height="149"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -71,6 +71,11 @@
                 <constraint firstAttribute="trailing" secondItem="3sd-fD-RNc" secondAttribute="trailing" constant="20" id="wei-yy-Nic"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="expirationDate" destination="m7V-Ic-ICT" id="0CJ-UK-mTi"/>
+                <outlet property="seasoningImageView" destination="3jp-4i-zji" id="QYZ-t6-cAt"/>
+                <outlet property="seasoningNameLabel" destination="OtG-MO-c8K" id="nq2-1J-wcM"/>
+            </connections>
             <point key="canvasLocation" x="-183.33333333333334" y="16.40625"/>
         </view>
     </objects>
